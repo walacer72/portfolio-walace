@@ -14,7 +14,7 @@ const ProjectItem = ({ item }: Props) => {
 
     return (
 
-        <li className={`relative w-full rounded-lg min-h-[250px] text-slate-400 shadow-[0_0_10px_rgba(255,255,255,0.1)] p-4 transition-all duration-300 border border-stone-950 hover:border-stone-800 md:hover:scale-105`}>
+        <li className={`relative w-full rounded-lg min-h-[270px] text-slate-400 shadow-[0_0_10px_rgba(255,255,255,0.1)] p-4 transition-all duration-300 border border-stone-950 hover:border-stone-800 md:hover:scale-105`}>
 
             <div className="flex flex-col h-full gap-4 justify-between">
 
@@ -46,16 +46,16 @@ const ProjectItem = ({ item }: Props) => {
 
 
                 <div className="flex gap-5 text-xs mt-2 justify-between text-slate-400">
-                    <button className='hover:bg-[rgba(100,100,100,0.1)] hover:shadow-[0_0_10px_rgba(255,255,255,0.3)] transition-all duration-200 py-2 px-4 rounded-full hover:opacity-80'>
+                    <button className='hover:border-stone-800 border border-stone-950 shadow-[0_0_10px_rgba(255,255,255,0.1)] transition-all duration-200 px-4 rounded-full hover:opacity-80'>
                         <a href={item.demo} target='_blank'>Demo</a>
                     </button>
-                    <button className='hover:bg-[rgba(0,0,0,0.9)] transition-all duration-200 py-2 px-4 rounded-full hover:opacity-80'>
+                    <button className='hover:border-stone-800 border border-stone-950 shadow-[0_0_10px_rgba(255,255,255,0.1)] transition-all duration-200 py-2 px-4 rounded-full hover:opacity-80'>
                         <a href={item.github} target='_blank'>GitHub</a>
                     </button>
                     <button
                         onMouseEnter={() => setDescriptShow(true)}
                         onMouseLeave={() => setDescriptShow(false)}
-                        className="transition-all duration-200 py-2 px-4 rounded-full hover:opacity-50 text-sky-800">
+                        className="transition-all duration-200 pr-2 rounded-full hover:opacity-50 text-sky-800">
                         Ver mais
                     </button>
                 </div>
