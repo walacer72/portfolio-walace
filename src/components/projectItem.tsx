@@ -46,10 +46,10 @@ const ProjectItem = ({ item }: Props) => {
 
 
                 <div className="flex gap-5 text-xs mt-2 justify-between text-slate-400">
-                    <button className='hover:shadow-[0_0_10px_rgba(255,255,255,0.1)] transition-all duration-200 py-2 px-4 rounded-full hover:opacity-80'>
+                    <button className='hover:bg-[rgba(100,100,100,0.1)] hover:shadow-[0_0_10px_rgba(255,255,255,0.3)] transition-all duration-200 py-2 px-4 rounded-full hover:opacity-80'>
                         <a href={item.demo} target='_blank'>Demo</a>
                     </button>
-                    <button className='hover:shadow-[0_0_10px_rgba(255,255,255,0.1)] transition-all duration-200 py-2 px-4 rounded-full hover:opacity-80'>
+                    <button className='hover:bg-[rgba(0,0,0,0.9)] transition-all duration-200 py-2 px-4 rounded-full hover:opacity-80'>
                         <a href={item.github} target='_blank'>GitHub</a>
                     </button>
                     <button

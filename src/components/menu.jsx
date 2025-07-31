@@ -6,8 +6,8 @@ export const Menu = () => {
     const lista = ['Home', 'Skills', 'Project', 'Contact'];
 
     return (
-        <ul className='py-2 px-8 rounded-full flex w-full gap-8 justify-between text-slate-400'>
-            <BiCodeAlt className='text-sky-700 w-8 h-8' />
+        <ul className='py-2 px-8 rounded-full flex w-full gap-8 justify-between items-center text-slate-400'>
+            <BiCodeAlt className='text-sky-700 text-3xl md:text-2xl flex justify-center items-center' />
             {lista.map((item, index) => (
 
                 <li key={item} className='flex items-center cursor-pointer font-light transition-all duration-200 group sm:text-sm md:text-base xl:text-lg'>
