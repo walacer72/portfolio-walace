@@ -8,6 +8,19 @@ export default {
   ],
   theme: {
     extend: {
+      animation: {
+        aurora: "aurora 30s ease-in-out infinite alternate",
+      },
+      keyframes: {
+        aurora: {
+          from: {
+            backgroundPosition: "50% 50%, 50% 50%",
+          },
+          to: {
+            backgroundPosition: "350% 50%, 350% 50%",
+          },
+        },
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -16,3 +29,4 @@ export default {
   },
   plugins: [],
 } satisfies Config;
+
