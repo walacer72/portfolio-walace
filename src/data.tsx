@@ -153,7 +153,7 @@ export const Tecnologias = [
     { image: <SiJavascript />, tec: 'Javascript', pct: 100 },
     { image: <SiReact />, tec: 'ReactJS', pct: 70 },
     { image: <SiTypescript />, tec: 'Typescript', pct: 100 },
-    { image: <SiTailwindcss />, tec: 'TailwindCSS', pct: 100 },
+    { image: <SiTailwindcss />, tec: 'Tailwind', pct: 100 },
     { image: <SiMysql />, tec: 'MySQL', pct: 70 },
     { image: <SiGithub />, tec: 'Github', pct: 50 }
 ]

@@ -24,12 +24,13 @@ const Skills = () => {
               >
                 {/* Conteúdo do botão */}
                 <div className="relative z-10 flex justify-between items-center">
+                  
                   <div className="flex items-center justify-center">
                     <div className="w-10 h-10 flex justify-center items-center text-2xl text-sky-800">{item.image}</div>
                     <div>{item.tec}</div>
                   </div>
 
-                  <span className="text-transparent font-bold transition-all transform group-hover:text-stone-800">
+                  <span className="hidden md:block text-transparent font-bold transition-all transform group-hover:text-stone-800">
                     {`${item.pct} %`}
                   </span>
                 </div>
