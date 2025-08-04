@@ -25,17 +25,17 @@ const Contact = () => {
 
   return (
     <section id='Contact' className='min-h-screen w-full flex justify-center items-center'>
-      <div className="w-full h-full max-w-6xl flex flex-col justify-center md:items-center px-8">
-        <h1 className='bg-gradient-to-r from-sky-800 to-sky-200 bg-clip-text text-lg md:text-2xl font-semibold text-transparent'>Procurando alguém para somar no seu time?</h1>
+      <div className="w-full h-full max-w-6xl flex flex-col justify-center items-center p-4">
+        <h1 className='bg-gradient-to-r from-sky-800 to-sky-200 bg-clip-text text-lg text-center md:text-2xl font-semibold text-transparent'>Procurando alguém para somar no seu time?</h1>
 
         <div className="w-full md:mt-12 gap-8 flex flex-col md:flex-row justify-between md:p-4">
-          <div className="flex-1 flex flex-col justify-between p-4 md:p-8">
-            <h3 className='text-sm md:text-md text-slate-400 md:leading-relaxed mb-8 md:mb-0'>Acredito que bons resultados vêm da combinação entre esforço, responsabilidade e trabalho em equipe. Estou pronto para contribuir em projetos desafiadores e crescer junto com profissionais que também buscam excelência.</h3>
+          <div className="flex-1 flex flex-col items-center md:items-start justify-between p-4 md:p-8">
+            <h3 className='text-sm md:text-md text-slate-400 text-center md:text-start md:leading-relaxed mb-8 md:mb-0'>Acredito que bons resultados vêm da combinação entre esforço, responsabilidade e trabalho em equipe. Estou pronto para contribuir em projetos desafiadores e crescer junto com profissionais que também buscam excelência.</h3>
             <Icons />
           </div>
           <div className="bg-[rgba(0,0,0,0.9)] rounded-3xl flex justify-center items-center p-8 md:px-8 md:py-12 ">
             <form onSubmit={handleSubmit(onSubmit)} className="w-full flex flex-col gap-2 font-roboto100">
-              <div className="w-full flex flex-col md:flex-row gap-4">
+              <div className="w-full flex flex-row gap-4">
                 <label className='w-full flex flex-col gap-2'>
                   <p className='text-sm text-slate-400 pl-4'>Nome</p>
                   <input {...register('name')} className='w-full flex rounded-full text-sm h-8 md:h-10 p-2 px-6 outline-none bg-zinc-950 shadow-sm shadow-slate-700 text-slate-500' />
