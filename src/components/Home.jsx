@@ -1,6 +1,6 @@
 import React from 'react'
-import { BiLogoGithub, BiLogoInstagram, BiLogoLinkedin } from 'react-icons/bi';
 import { Menu } from './menu';
+import { Icons } from './icons';
 
 const Home = () => {
     return (
@@ -24,29 +24,7 @@ const Home = () => {
                         <p className='max-w-[300px] text-sm text-gray-400'>Construindo experiências web modernas e acessíveis com foco em performance e usabilidade</p>
                     </div>
 
-                    <div className="flex gap-3">
-                        <a
-                            rel="noopener noreferrer"
-                            target='_blank'
-                            href="https://github.com/walacer72">
-                            <BiLogoGithub className='h-10 w-10 cursor-pointer rounded-full border-transparent bg-sky-700 p-2 text-white transition-all duration-200 hover:scale-110 hover:border-sky-800 hover:bg-slate-300 hover:text-sky-700' />
-                        </a>
-
-                        <a
-                            rel="noopener noreferrer"
-                            target='_blank'
-                            href="https://www.linkedin.com/in/walace-oliveira-dev/">
-                            <BiLogoLinkedin className='h-10 w-10 cursor-pointer rounded-full border-transparent bg-sky-700 p-2 text-white transition-all duration-200 hover:scale-110 hover:border-sky-800 hover:bg-slate-300 hover:text-sky-700' />
-                        </a>
-
-                        <a
-                            rel="noopener noreferrer"
-                            target='_blank'
-                            href="">
-                            <BiLogoInstagram className='h-10 w-10 cursor-pointer rounded-full border-transparent bg-sky-700 p-2 text-white transition-all duration-200 hover:scale-110 hover:border-sky-800 hover:bg-slate-300 hover:text-sky-700' />
-                        </a>
-
-                    </div>
+                    <Icons />
                 </aside>
 
                 <div className="py-3 flex md:hidden lg:hidden fixed bottom-0 left-0 right-0 justify-center items-center border-t border-stone-900 bg-black">

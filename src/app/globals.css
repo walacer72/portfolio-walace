@@ -43,3 +43,15 @@ body::-webkit-scrollbar-thumb:hover {
   transition: all ease-in .3s;
   
 }
+
+@layer utilities {
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #09090b inset  !important; /* mesma cor de fundo */
+    -webkit-text-fill-color: white !important; /* cor do texto */
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+  input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px #0c0a09 inset !important;
+  }
+}
