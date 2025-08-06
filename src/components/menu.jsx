@@ -1,26 +1,54 @@
-import { BiCodeAlt } from 'react-icons/bi'
+'use client'
 
-
+import { BiCodeAlt, BiMessageDetail, BiUserCircle } from 'react-icons/bi'
+import { AiFillHome, AiOutlineMail } from 'react-icons/ai'
+import { FaUser, FaTools, FaFolderOpen } from 'react-icons/fa'
+import { MdEmail } from 'react-icons/md'
+import { IoPersonCircleSharp } from 'react-icons/io5'
+ 
 export const Menu = () => {
 
-    const lista = ['Home', 'Skills', 'Project', 'Contact'];
+    const lista = ['Home', 'Aboult','Skills', 'Project', 'Contact'];
 
     return (
-        <ul className='py-2 px-8 rounded-full flex w-full gap-8 justify-between items-center text-slate-400'>
-            <BiCodeAlt className='text-sky-700 text-2xl' />
-            {lista.map((item, index) => (
+        <>
+            <ul className='md:hidden lg:hidden py-2 px-8 rounded-full flex w-full gap-8 justify-evenly items-center text-slate-400'>
+                
+                {lista.map(item => (
 
-                <li key={item} className='flex items-center cursor-pointer font-light transition-all duration-200 group sm:text-sm md:text-base xl:text-lg'>
+                    <li key={item} className='flex items-center cursor-pointer font-light transition-all duration-200 group sm:text-sm md:text-base xl:text-lg'>
 
-                    <a
-                        className='transition-all ease-in duration-200 hover:-translate-y-1'
-                        href={`#${item}`}
-                    >
-                        {item}
-                    </a>
-                </li>
-            ))}
+                        <a
+                            className='transition-all ease-in duration-200 hover:-translate-y-1'
+                            href={`#${item}`}
+                        >
+                            {item === 'Home' && <AiFillHome className='w-6 h-6'/>}
+                            {item === 'Aboult' && <FaUser  className='w-5 h-5'/>}
+                            {item === 'Skills' && <FaTools className='w-5 h-5'/>}
+                            {item === 'Project' && <FaFolderOpen className='w-6 h-6'/>}
+                            {item === 'Contact' && <MdEmail className='w-6 h-6'/>}
+                        </a>
+                    </li>
+                ))}
 
-        </ul>
+            </ul>  
+            <ul className='hidden md:flex py-2 px-8 rounded-full w-full gap-8 justify-between items-center text-slate-400'>
+                <BiCodeAlt className='text-sky-700 text-2xl' />
+                {lista.map((item, index) => (
+
+                    <li key={item} className='flex items-center cursor-pointer font-light transition-all duration-200 group sm:text-sm md:text-base xl:text-lg'>
+
+                        <a
+                            className='transition-all ease-in duration-200 hover:-translate-y-1'
+                            href={`#${item}`}
+                        >
+                            {item}
+                        </a>
+                    </li>
+                ))}
+
+            </ul>
+        </>
+
     )
 }

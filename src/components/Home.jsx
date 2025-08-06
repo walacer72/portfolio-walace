@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <section id='Home'
             style={{ backgroundImage: "url('bgAuroraBlack.jpg')" }}
-            className='flex min-h-screen w-full items-center justify-center bg-cover bg-center'
+            className='flex min-h-screen w-screen items-center justify-center bg-cover bg-center'
         >
             <div className="flex flex-col items-center md:flex-row justify-center gap-8 p-5 text-center z-10">
 

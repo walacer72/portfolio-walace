@@ -3,6 +3,7 @@ import Home from '@/components/Home';
 import Skills from '@/components/Skills';
 import Project from '@/components/Project';
 import Contact from '@/components/Contact';
+import { Aboult } from '@/components/aboult';
 
 
 export default () => {
@@ -17,6 +18,7 @@ export default () => {
 
       <main className="bg-zinc-950">
         <Home />
+        <Aboult />
         <Skills />
         <Project />
         <Contact />
