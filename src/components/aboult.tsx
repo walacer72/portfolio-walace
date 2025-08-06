@@ -18,23 +18,23 @@ export const Aboult = () => {
                     <p className="text-sm text-slate-500 md:leading-relaxed">Hoje, busco uma oportunidade para aplicar minhas habilidades técnicas em projetos reais e contribuir com times de tecnologia, unindo minha experiência de gestão com a paixão por Ti.</p>
 
                     <div className="flex justify-between mt-4">
-                        <div className="flex gap-4 items-center ">
+                        <div className="flex md:gap-4 items-center ">
                             <div className="flex flex-col">
                                 <div className="flex items-center">
                                     <div className="text-slate-300 text-2xl md:text-4xl font-semibold">3</div>
-                                    <span className="text-sky-500 text-2xl mb-1">+</span>
+                                    <span className="text-sky-500 text-xl md:text-2xl mb-1">+</span>
                                 </div>
                                 <p className="text-sm text-slate-500 opacity-50">Projectos pessoais</p>
                             </div>
                             <div className="flex flex-col">
                                 <div className="flex items-center">
                                     <div className="text-slate-300 text-2xl md:text-4xl font-semibold">6</div>
-                                    <span className="text-sky-500 text-2xl mb-1">+</span>
+                                    <span className="text-sky-500 text-xl md:text-2xl mb-1">+</span>
                                 </div>
                                 <p className="text-sm text-slate-500 opacity-50">Projectos academicos</p>
                             </div>
                         </div>
-                        <button className="bg-sky-700 rounded-full inline-block transition-all ease-in px-6 hover:-translate-y-2">Curriculo</button>
+                        <button className="bg-sky-700 rounded-full flex items-center gap-2 transition-all ease-in px-6 hover:-translate-y-2">Curriculo <span>...</span></button>
                     </div>
                 </div>
             </div>
