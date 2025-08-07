@@ -13,11 +13,11 @@ const Project = () => {
 
   return (
 
-    <section id='Project' className='min-h-screen w-full flex justify-center items-center'>
+    <section id='Projects' className='min-h-screen w-full flex justify-center items-center'>
       <div className="w-full h-full max-w-6xl flex flex-col items-center justify-center gap-2 p-4 mt-28 md:p-0">
 
         <h1 className='bg-gradient-to-r from-sky-800 to-sky-200 bg-clip-text font-semibold text-transparent text-4xl'>
-          Projects
+          Projetos
         </h1>
 
         <div className="flex justify-center gap-4 items-center text-slate-400 mt-4">

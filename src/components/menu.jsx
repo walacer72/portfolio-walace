@@ -8,7 +8,7 @@ import { IoPersonCircleSharp } from 'react-icons/io5'
  
 export const Menu = () => {
 
-    const lista = ['Home', 'Aboult','Skills', 'Project', 'Contact'];
+    const lista = ['Home', 'About','Skills', 'Projects', 'Contact'];
 
     return (
         <>
@@ -23,9 +23,9 @@ export const Menu = () => {
                             href={`#${item}`}
                         >
                             {item === 'Home' && <AiFillHome className='w-6 h-6'/>}
-                            {item === 'Aboult' && <FaUser  className='w-5 h-5'/>}
+                            {item === 'About' && <FaUser  className='w-5 h-5'/>}
                             {item === 'Skills' && <FaTools className='w-5 h-5'/>}
-                            {item === 'Project' && <FaFolderOpen className='w-6 h-6'/>}
+                            {item === 'Projects' && <FaFolderOpen className='w-6 h-6'/>}
                             {item === 'Contact' && <MdEmail className='w-6 h-6'/>}
                         </a>
                     </li>
@@ -42,7 +42,11 @@ export const Menu = () => {
                             className='transition-all ease-in duration-200 hover:-translate-y-1'
                             href={`#${item}`}
                         >
-                            {item}
+                            {item === 'Home' && 'Início'}
+                            {item === 'About' && 'Sobre mim'}
+                            {item === 'Skills' && 'Habilidades'}
+                            {item === 'Projects' && 'Projetos'} 
+                            {item === 'Contact' && 'Contato'}
                         </a>
                     </li>
                 ))}

@@ -27,7 +27,7 @@ const Home = () => {
                     <Icons />
                 </aside>
 
-                <div className="py-3 flex md:hidden lg:hidden fixed bottom-0 left-0 right-0 justify-center items-center border-t border-stone-900 bg-black">
+                <div className="flex md:hidden lg:hidden fixed bottom-0 left-0 right-0 justify-center items-center border-t border-stone-900 bg-black">
                     <Menu />
                 </div>
 
