@@ -4,7 +4,7 @@ export const Aboult = () => {
 
 
     return (
-        <div id='About' className="min-h-screen w-screen flex justify-center items-center">
+        <div id='About' className="min-h-[calc(100vh-44px)] md:min-h-screen lg:min-h-screen w-screen flex justify-center items-center">
             <div className="flex flex-col gap-4 md:gap-8 justify-center items-center w-full max-w-6xl p-4 md:p-8 mx-4">
                 <h1 className="bg-gradient-to-r from-slate-950 to-sky-400 dark:from-sky-800 dark:to-sky-50 bg-clip-text text-4xl font-semibold text-transparent">Sobre mim</h1>
                 <div className="flex flex-col md:gap-8 p-4 md:p-8 bg-[rgba(0,0,0,0.1)] dark:bg-[rgba(0,0,0,0.5)] rounded-3xl">

@@ -13,7 +13,7 @@ const Project = () => {
 
   return (
 
-    <section id='Projects' className='min-h-screen w-full flex justify-center items-center'>
+    <section id='Projects' className='min-h-[calc(100vh-44px)] md:min-h-screen lg:min-h-screen w-full flex justify-center items-center'>
       <div className="w-full h-full max-w-6xl flex flex-col items-center justify-center gap-2 p-4 mt-28 md:p-0">
 
         <h1 className='bg-gradient-to-r from-slate-950 to-sky-400 dark:from-sky-800 dark:to-sky-50 bg-clip-text font-semibold text-transparent text-4xl'>

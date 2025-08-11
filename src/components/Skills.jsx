@@ -7,7 +7,7 @@ const Skills = () => {
   const habilidades = Habilidades;
 
   return (
-    <div id='Skills' className='w-screen flex items-center justify-center min-h-screen md:mt-0 lg:mt-0 py-28 px-4 md:p-6 lg:p-10 '>
+    <div id='Skills' className='w-screen flex items-center justify-center min-h-[calc(100vh-44px)] md:min-h-screen lg:min-h-screen md:mt-0 lg:mt-0 py-28 px-4 md:p-6 lg:p-10 '>
 
       <div className="h-full w-full max-w-6xl text-slate-400 flex flex-col items-center mt-8 justify-center gap-44 md:gap-20 p-4 md:p-6 lg:p-10">
 

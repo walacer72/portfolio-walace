@@ -24,7 +24,7 @@ const Contact = () => {
   }
 
   return (
-    <section id='Contact' className='min-h-screen w-full flex justify-center items-center'>
+    <section id='Contact' className='min-h-[calc(100vh-44px)] md:min-h-screen lg:min-h-screen w-full flex justify-center items-center'>
       <div className="w-full h-full max-w-6xl flex flex-col justify-center items-center p-4">
         <h1 className='bg-gradient-to-r from-slate-950 to-sky-400 dark:from-sky-800 dark:to-sky-50 bg-clip-text text-lg text-center md:text-2xl font-semibold text-transparent'>Procurando alguém para somar no seu time?</h1>
 

@@ -5,7 +5,7 @@ import { Icons } from './icons';
 const Home = () => {
     return (
         <section id='Home'
-            className="flex min-h-screen w-full items-center justify-center bg-cover bg-center 
+            className="flex min-h-[calc(100vh-44px)] md:min-h-screen lg:min-h-screen w-full items-center justify-center bg-cover bg-center 
              bg-[url('/bgAuroraLight.jpg')] dark:bg-[url('/bgAuroraBlack.jpg')]"
         >
             <div className="flex flex-col items-center md:flex-row justify-center gap-8 p-5 text-center z-10">
@@ -28,7 +28,7 @@ const Home = () => {
                     <Icons />
                 </aside>
 
-                <div className="flex md:hidden lg:hidden fixed bottom-0 left-0 right-0 justify-center items-center border-t border bg-zinc-200 dark:bg-black">
+                <div className="flex md:hidden lg:hidden fixed bottom-0 left-0 right-0 h-11 justify-center items-center border-t border bg-zinc-200 dark:bg-black">
                     <Menu />
                 </div>
 
