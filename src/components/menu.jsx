@@ -12,11 +12,11 @@ export const Menu = () => {
 
     return (
         <>
-            <ul className='md:hidden lg:hidden py-2 px-8 rounded-full flex w-full gap-8 justify-evenly items-center text-slate-400'>
+            <ul className='md:hidden lg:hidden py-2 px-8 rounded-full flex w-full gap-8 justify-evenly items-center text-primary'>
                 
                 {lista.map(item => (
 
-                    <li key={item} className='flex items-center cursor-pointer font-light transition-all duration-200 group sm:text-sm md:text-base xl:text-lg'>
+                    <li key={item} className='flex items-center cursor-pointer font-light transition-all duration-200 group sm:text-sm md:text-base xl:text-base'>
 
                         <a
                             className='transition-all ease-in duration-200 hover:-translate-y-1'
@@ -32,11 +32,11 @@ export const Menu = () => {
                 ))}
 
             </ul>  
-            <ul className='hidden md:flex py-2 px-8 rounded-full w-full gap-8 justify-between items-center text-slate-400'>
+            <ul className='hidden md:flex py-2 px-8 rounded-full w-full gap-8 justify-between items-center text-primary'>
                 <BiCodeAlt className='text-sky-700 text-2xl' />
                 {lista.map((item, index) => (
 
-                    <li key={item} className='flex items-center cursor-pointer font-light transition-all duration-200 group sm:text-sm md:text-base xl:text-lg'>
+                    <li key={item} className='flex items-center cursor-pointer font-light transition-all duration-200 group sm:text-sm md:text-base xl:text-base'>
 
                         <a
                             className='transition-all ease-in duration-200 hover:-translate-y-1'

@@ -7,27 +7,42 @@ html, body {
   scroll-behavior: smooth;
 }
 
+
+/* Scrollbar no modo claro */
 body::-webkit-scrollbar {
   width: 8px;
   height: 6px;
-  background-color: #09090b;
+  background-color: #f0f0f0; /* claro */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 1);
-  transition: all ease-in .3s;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all ease-in 0.3s;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(155, 155, 155, 0.1);
-  transition: all ease-in .3s;
-  
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* Scrollbar no modo escuro */
+.dark body::-webkit-scrollbar {
+  background-color: #09090b; /* escuro */
+}
+
+.dark body::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.dark body::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+/*
 @layer utilities {
   input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0px 1000px #09090b inset  !important; /* mesma cor de fundo */
-    -webkit-text-fill-color: white !important; /* cor do texto */
+    -webkit-box-shadow: 0 0 0px 1000px #09090b inset  !important; 
+    -webkit-text-fill-color: white !important; 
     transition: background-color 5000s ease-in-out 0s;
   }
 
@@ -35,19 +50,18 @@ body::-webkit-scrollbar-thumb:hover {
     -webkit-box-shadow: 0 0 0 1000px #0c0a09 inset !important;
   }
 }
-
-
+*/
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 240 4.8% 95.9%;
     --foreground: 20 14.3% 4.1%;
-    --card: 0 0% 100%;
+    --card: 24 5.4% 63.9%;
     --card-foreground: 20 14.3% 4.1%;
     --popover: 0 0% 100%;
     --popover-foreground: 20 14.3% 4.1%;
-    --primary: 24 9.8% 10%;
-    --primary-foreground: 60 9.1% 97.8%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 240 5.2% 33.9%;
     --secondary: 60 4.8% 95.9%;
     --secondary-foreground: 24 9.8% 10%;
     --muted: 60 4.8% 95.9%;
@@ -67,14 +81,14 @@ body::-webkit-scrollbar-thumb:hover {
     --radius: 0.5rem;
   }
   .dark {
-    --background: 20 14.3% 4.1%;
+    --background: 240 10% 3.9%;
     --foreground: 60 9.1% 97.8%;
-    --card: 20 14.3% 4.1%;
+    --card: 12 6.5% 15.1%;
     --card-foreground: 60 9.1% 97.8%;
     --popover: 20 14.3% 4.1%;
     --popover-foreground: 60 9.1% 97.8%;
     --primary: 60 9.1% 97.8%;
-    --primary-foreground: 24 9.8% 10%;
+    --primary-foreground: 240 5% 64.9%;
     --secondary: 12 6.5% 15.1%;
     --secondary-foreground: 60 9.1% 97.8%;
     --muted: 12 6.5% 15.1%;

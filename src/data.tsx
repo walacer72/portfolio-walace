@@ -29,7 +29,7 @@ import { Project } from './projectType';
 
 export const personalProjects: Project[] = [
     {
-        demo: 'https://walacer72.github.io/Maria-Doces/#Produtos',
+        demo: 'https://walacer72.github.io/Maria-Doces',
         github: 'https://github.com/walacer72/Maria-Doces',
         pc: mariaDocesPc,
         smart: mariaDocesSmart,

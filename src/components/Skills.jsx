@@ -12,15 +12,15 @@ const Skills = () => {
       <div className="h-full w-full max-w-6xl text-slate-400 flex flex-col items-center mt-8 justify-center gap-44 md:gap-20 p-4 md:p-6 lg:p-10">
 
         <div className="flex flex-col justify-center items-center gap-4 md:mt-0">
-          <h1 className='bg-gradient-to-r from-sky-800 to-sky-200 bg-clip-text text-4xl font-semibold text-transparent'>Hard Skills</h1>
-          <h3 className='text-sm text-slate-500 text-center'>Possuo conhecimentos em desenvolvimento front-end, com experiência no uso de HTML, CSS, JavaScript e frameworks modernos como React e Tailwind CSS, aplicando boas práticas de codificação, performance e usabilidade.</h3>
+          <h1 className='bg-gradient-to-r from-slate-950 to-sky-400 dark:from-sky-800 dark:to-sky-50 bg-clip-text text-4xl font-semibold text-transparent'>Hard Skills</h1>
+          <h3 className='text-sm text-primary-foreground text-center'>Possuo conhecimentos em desenvolvimento front-end, com experiência no uso de HTML, CSS, JavaScript e frameworks modernos como React e Tailwind CSS, aplicando boas práticas de codificação, performance e usabilidade.</h3>
 
           <ul className="w-full grid grid-cols-2 lg:grid-cols-4 gap-4 mt-12 md:mt-4">
             {tecnologias.map((item, index) => (
 
               <li
                 key={index}
-                className="relative text-slate-400 group px-4 py-1 font-medium shadow-sm shadow-stone-700 rounded-full overflow-hidden z-0"
+                className="relative text-primary group px-4 py-1 transition-all duration-300 ease-in font-medium shadow-sm shadow-stone-700 rounded-full overflow-hidden border border-transparent hover:border-primary-foreground"
               >
                 {/* Conteúdo do botão */}
                 <div className="relative z-10 flex justify-between items-center">
@@ -56,13 +56,13 @@ const Skills = () => {
 
 
         <div className="w-full flex flex-col justify-center items-center gap-4 mt-16 md:mt-0 lg:mt-0">
-          <h1 className='bg-gradient-to-r from-sky-800 to-sky-200 bg-clip-text text-4xl font-semibold text-transparent md:text-xl lg:text-4xl'>Soft Skills</h1>
-          <h3 className='text-sm text-slate-500 text-center'>Tenho facilidade para trabalhar em equipe, sou proativo e estou sempre disposto a aprender e me adaptar às necessidades do time e do projeto.</h3>
+          <h1 className='bg-gradient-to-r from-slate-950 to-sky-400 dark:from-sky-800 dark:to-sky-50 bg-clip-text text-4xl font-semibold text-transparent md:text-xl lg:text-4xl'>Soft Skills</h1>
+          <h3 className='text-sm text-primary-foreground text-center'>Tenho facilidade para trabalhar em equipe, sou proativo e estou sempre disposto a aprender e me adaptar às necessidades do time e do projeto.</h3>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
+          <div className="w-full grid grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
             {habilidades.map((item, index) => (
 
-              <div key={index} className="flex justify-center items-center p-2 px-4 py-2 h-16 md:h-auto text-center cursor-pointer shadow-sm shadow-stone-700 rounded-full
+              <div key={index} className="flex justify-center items-center text-primary p-2 px-4 py-2 h-16 md:h-auto text-center cursor-pointer shadow-sm shadow-stone-700 rounded-full
                transition-all  hover:opacity-80">
                 {item}
               </div>
