@@ -23,7 +23,7 @@ const Skills = () => {
                 className="relative text-primary group px-4 py-1 transition-all duration-300 ease-in font-medium shadow-sm shadow-stone-700 rounded-full overflow-hidden border border-transparent hover:border-primary-foreground"
               >
                 {/* Conteúdo do botão */}
-                <div className="relative z-10 flex justify-between items-center">
+                <div className="relative z-0 flex justify-between items-center">
                   
                   <div className="flex items-center justify-center">
                     <div className="w-10 h-10 flex justify-center items-center text-2xl text-sky-800">{item.image}</div>

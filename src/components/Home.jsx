@@ -28,7 +28,7 @@ const Home = () => {
                     <Icons />
                 </aside>
 
-                <div className="flex md:hidden lg:hidden fixed bottom-0 left-0 right-0 h-11 justify-center items-center border-t border bg-zinc-200 dark:bg-black">
+                <div className="flex md:hidden lg:hidden fixed bottom-0 left-0 right-0 h-11 justify-center items-center border-t border bg-zinc-200 dark:bg-black z-40">
                     <Menu />
                 </div>
 
