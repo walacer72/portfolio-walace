@@ -40,11 +40,11 @@ const Skills = () => {
                 }
 
                 {item.pct === 70 &&
-                  <span className={`absolute bottom-0 left-0 h-[8px] w-12 bg-blue-500 transition-all duration-300 group-hover:w-4/6 z-0`} />
+                  <span className={`absolute bottom-0 left-0 h-[8px] w-12 bg-sky-700 transition-all duration-300 group-hover:w-4/6 z-0`} />
                 }
 
                 {item.pct === 50 &&
-                  <span className={`absolute bottom-0 left-0 h-[8px] w-12 bg-blue-500 transition-all  duration-300 group-hover:w-3/6 z-0`} />
+                  <span className={`absolute bottom-0 left-0 h-[8px] w-12 bg-sky-700 transition-all  duration-300 group-hover:w-3/6 z-0`} />
                 }
                 
               </li>

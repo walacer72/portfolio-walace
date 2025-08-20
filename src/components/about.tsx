@@ -1,10 +1,12 @@
 import { Habilidades } from "@/data";
+import { Download } from "lucide-react";
 
 export const Aboult = () => {
 
 
     return (
         <div id='About' className="min-h-[calc(100vh-44px)] md:min-h-screen lg:min-h-screen w-screen flex justify-center items-center">
+            
             <div className="flex flex-col gap-4 md:gap-8 justify-center items-center w-full max-w-6xl p-4 md:p-8 mx-4">
                 <h1 className="bg-gradient-to-r from-slate-950 to-sky-400 dark:from-sky-800 dark:to-sky-50 bg-clip-text text-4xl font-semibold text-transparent">Sobre mim</h1>
                 <div className="flex flex-col md:gap-8 p-4 md:p-8 bg-[rgba(0,0,0,0.1)] dark:bg-[rgba(0,0,0,0.5)] rounded-3xl">
@@ -34,7 +36,14 @@ export const Aboult = () => {
                                 <p className="text-sm text-primary-foreground opacity-50">Projetos acadêmicos</p>
                             </div>
                         </div>
-                        <button className="bg-sky-700 rounded-full flex items-center gap-2 transition-all ease-in px-6 hover:-translate-y-2">Curriculo <span>...</span></button>
+                        <button className="bg-sky-700 rounded-full flex items-center gap-2 transition-all ease-in px-4 hover:-translate-y-2">
+                            <a 
+                            download
+                            href="/WALACE_DEOLIVEIRA_currículo.pdf">
+                                Curriculo
+                            </a>
+                            <Download size={15} />
+                        </button>
                     </div>
                 </div>
             </div>
