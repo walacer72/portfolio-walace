@@ -22,7 +22,7 @@ const Contact = () => {
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
-      const response = await fetch("https://formsubmit.co/walacer72@gmail.com", {
+      const response = await fetch("https://formsubmit.co/234ced1bc48c004ae32c73ba38a9cb71", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -38,9 +38,11 @@ const Contact = () => {
 
       });
 
-      setFormShow(true);
-      reset();
-      
+      if (response.ok) {
+        setFormShow(true);
+        reset();
+      }
+
     } catch (error) {
       console.log("Erro ao enviar:", error);
     }
@@ -66,7 +68,7 @@ const Contact = () => {
 
           <div className="bg-[rgba(0,0,0,0.1)] dark:bg-[rgba(0,0,0,0.9)] rounded-3xl flex flex-1 justify-center items-center py-8 px-4 md:px-8 md:py-12 ">
             <form onSubmit={handleSubmit(onSubmit)} className="w-full flex flex-col gap-2 font-roboto100">
-              
+
               <div className="w-full flex flex-row gap-4">
                 <label className='w-full flex flex-col gap-2'>
                   <p className='text-sm text-primary pl-4'>Nome</p>
