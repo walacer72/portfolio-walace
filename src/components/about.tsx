@@ -9,7 +9,7 @@ export const Aboult = () => {
             
             <div className="flex flex-col gap-4 md:gap-8 justify-center items-center w-full max-w-6xl p-4 md:p-8 mx-4">
                 <h1 className="bg-gradient-to-r from-slate-950 to-sky-400 dark:from-sky-800 dark:to-sky-50 bg-clip-text text-4xl font-semibold text-transparent">Sobre mim</h1>
-                <div className="flex flex-col md:gap-8 p-4 md:p-8 bg-[rgba(0,0,0,0.1)] dark:bg-[rgba(0,0,0,0.5)] rounded-3xl">
+                <div className="flex flex-col md:gap-8 p-4 md:p-8 bg-[rgba(0,0,0,0.1)] dark:bg-black rounded-3xl">
                     <p className="text-sm text-primary md:leading-relaxed">Sou um profissional em transição de carreira para a área de tecnologia, atualmente cursando Análise e Desenvolvimento de Sistemas. Apesar de ainda não ter experiência formal na área de desenvolvimento, venho me preparando intensamente através de cursos práticos com foco em desenvolvimento web.
 
                         Tenho facilidade para aprender novas tecnologias e conceitos — ao longo da minha trajetória sempre me destaquei pela velocidade com que absorvo e aplico novos conhecimentos.

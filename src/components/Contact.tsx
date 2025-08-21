@@ -7,7 +7,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { Icons } from "@/components/icons"
 
 const Contact = () => {
-  const [formShow, setFormShow] = useState(false);
+  const [formShow, setFormShow] = useState(true);
 
   const formSchema = z.object({
     name: z.string().min(2, "Preencha o nome corretamente"),
@@ -66,7 +66,8 @@ const Contact = () => {
             <Icons />
           </div>
 
-          <div className="bg-[rgba(0,0,0,0.1)] dark:bg-[rgba(0,0,0,0.9)] rounded-3xl flex flex-1 justify-center items-center py-8 px-4 md:px-8 md:py-12 ">
+          <div className={`bg-[rgba(0,0,0,0.1)] dark:bg-black rounded-3xl flex flex-1 justify-center items-center ${formShow ? 'pt-8 pb-4 md:pt-12 md:pb-8':'py-8 md:py-12' } px-4 md:px-8`}>
+
             <form onSubmit={handleSubmit(onSubmit)} className="w-full flex flex-col gap-2 font-roboto100">
 
               <div className="w-full flex flex-row gap-4">
@@ -103,7 +104,7 @@ const Contact = () => {
               </button>
 
               {formShow && (
-                <div className="flex text-sm mt-4 text-center">
+                <div className="flex text-sm mt-2 text-center text-primary-foreground">
                   🚀 Sua mensagem chegou até mim! Estou ansioso para conversarmos melhor... Obrigado pela oportunidade!
                 </div>
               )}

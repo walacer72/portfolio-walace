@@ -24,8 +24,12 @@ import planAheadSmart from "../public/smartphone/planAhead.jpeg"
 import tmakiZapPc from "../public/pc/tmakiZap.jpg"
 import tmakiZapSmart from "../public/smartphone/tmakiZap.jpeg"
 import whatsAppClone from "../public/pc/whatsAppClone.jpg"
+import pizzaria from "../public/pc/pizzaria.jpg"
+import quizDev from "../public/pc/quizDev.jpg"
+import urnaEletronica from "../public/pc/urnaEletronica.jpg"
 import calculadoraIMC from "../public/pc/calculadoraIMC.jpg"
 import { Project } from './projectType';
+
 
 export const personalProjects: Project[] = [
     {
@@ -115,9 +119,9 @@ export const academicProjects: Project[] = [
         tec: []
     },
     {
-        demo: '',
-        github: '',
-        pc: '',
+        demo: 'https://walacer72.github.io/pizzaria/',
+        github: 'https://github.com/walacer72/pizzaria',
+        pc: pizzaria,
         smart: '',
         name: 'Pizza',
         description: 'Projeto em aula',
@@ -125,9 +129,9 @@ export const academicProjects: Project[] = [
         tec: []
     },
     {
-        demo: '',
-        github: '',
-        pc: '',
+        demo: 'https://walacer72.github.io/Urna-Eletronica/',
+        github: 'https://github.com/walacer72/Urna-Eletronica',
+        pc: urnaEletronica,
         smart: '',
         name: 'Urna Eletronica',
         description: 'Projeto em aula',
@@ -135,9 +139,9 @@ export const academicProjects: Project[] = [
         tec: []
     },
     {
-        demo: '',
-        github: '',
-        pc: '',
+        demo: 'https://walacer72.github.io/quizDev/',
+        github: 'https://github.com/walacer72/quizDev',
+        pc: quizDev,
         smart: '',
         name: 'QuizDev',
         description: 'Projeto em aula',
@@ -154,7 +158,7 @@ export const Tecnologias = [
     { image: <SiReact />, tec: 'ReactJS', pct: 70 },
     { image: <SiTypescript />, tec: 'Typescript', pct: 100 },
     { image: <SiTailwindcss />, tec: 'Tailwind', pct: 100 },
-    { image: <SiMysql />, tec: 'MySQL', pct: 70 },
+    { image: <SiMysql size={25} />, tec: 'MySQL', pct: 70 },
     { image: <SiGithub />, tec: 'Github', pct: 50 }
 ]
 

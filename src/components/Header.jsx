@@ -9,7 +9,7 @@ const Header = () => {
 
             <div className="text-stone-800 font-semibold text-xl md:text-2xl lg:text-3xl hover:text-stone-700 transition-all duration-200 ease-in cursor-pointer md:w-56">Walace.</div>
 
-            <div className='hidden md:block lg:block bg-zinc-200 dark:bg-[rgba(0,0,0,0.9)] dark:border text-slate-400 border-stone-900 rounded-full'>
+            <div className='hidden md:block lg:block bg-zinc-200 dark:bg-[rgba(0,0,0,0.9)] dark:border text-slate-400 border-stone-950 rounded-full'>
                 <Menu />
             </div>
 
@@ -20,7 +20,7 @@ const Header = () => {
                     rel="noopener noreferrer"
                     className='cursor-pointer flex gap-4 items-center transition-all ease-in hover:-translate-y-1'
                 >
-                    <button className='py-2 px-4 shadow-2xl dark:shadow-md text-slate-400 text-sm md:text-base shadow-stone-800 rounded-full bg-[rgba(0,0,0,0.9)]'>Entre em contato</button>
+                    <button className='py-2 px-4 shadow-2xl dark:shadow-md text-slate-400 text-sm md:text-base shadow-stone-800 rounded-full bg-black border border-stone-950'>Entre em contato</button>
                 </a>
 
                 <ThemeToggle />
