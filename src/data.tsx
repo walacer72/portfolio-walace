@@ -73,7 +73,7 @@ export const personalProjects: Project[] = [
         smart: tmakiZapSmart,
         name: 'Tmakiclub Zap',
         description: 'Desenvolvi um sistema de pedidos online integrado ao WhatsApp, voltado para pequenos comércios como docerias, lanchonetes e restaurantes. O cliente acessa um catálogo digital com produtos, imagens, preços e descrições, seleciona os itens desejados e, ao final, o sistema gera automaticamente uma mensagem com os detalhes do pedido, pronta para ser enviada ao WhatsApp da loja com um clique.',
-        tecnologias: 'Reactjs, Nextjs, Typescript, Shadcn-ui, Tailwindcss e Apis: zustand, zod, i18n e viacep',
+        tecnologias: 'Reactjs, Nextjs, Typescript, Shadcn-ui, Tailwindcss e bibliotecas: zustand, zod, i18next e Api viacep',
         tec: [ 
             <SiReact size={19}/>,
             <RiNextjsFill size={22}/>,
@@ -94,8 +94,8 @@ export const academicProjects: Project[] = [
         pc: whatsAppClone,
         smart: '',
         name: 'WhatsApp-Clone',
-        description: 'Projeto em aula, tecnolocias utilizadas Reactjs, css, firebase',
-        tecnologias: '',
+        description: 'Projeto em aula de um clone do WhatsApp desenvolvido com React.js, CSS e Material UI, integrando funcionalidades de envio de mensagens em tempo real e autenticação de usuários. O Firebase foi utilizado como backend (BaaS), permitindo armazenamento de dados e sincronização instantânea. O foco do projeto foi aplicar boas práticas de desenvolvimento front-end e criar uma experiência de usuário moderna e responsiva.',
+        tecnologias: 'Reactjs, css, biblioteca material UI e BaaS firebase',
         tec: []
     },
     {
