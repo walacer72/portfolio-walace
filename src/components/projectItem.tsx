@@ -28,17 +28,21 @@ const ProjectItem = ({ item }: Props) => {
                         </div>
                     </div>
 
-                    {item.pc && 
-                        <Image className='hidden mg:block lg:block rounded-lg object-cover w-full border-4 border-zinc-300 dark:border-none' src={item.pc} alt={item.name} />
+                    {item.pc &&
+                        <Image className='hidden md:block lg:block rounded-lg object-cover w-full border-4 border-zinc-300 dark:border-none' src={item.pc} alt={item.name} />
                     }
 
 
-                    {item.smart &&
+                    {item.smart ? (
                         <Image
                             className={`$md:hidden lg:hidden rounded-lg border-4 border-zinc-300 dark:border-none`}
                             src={item.smart} alt={item.name}
                         />
-                    }
+                    ) : item.pc ? (
+                        <Image
+                            className='md:hidden lg:hidden rounded-lg object-cover w-full border-4 border-zinc-300 dark:border-none'
+                            src={item.pc} alt={item.name} />
+                        ) : null}
 
 
                 </div>

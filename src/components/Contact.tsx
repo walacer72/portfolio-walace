@@ -7,7 +7,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { Icons } from "@/components/icons"
 
 const Contact = () => {
-  const [formShow, setFormShow] = useState(true);
+  const [formShow, setFormShow] = useState(false);
 
   const formSchema = z.object({
     name: z.string().min(2, "Preencha o nome corretamente"),

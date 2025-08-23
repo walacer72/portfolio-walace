@@ -10,7 +10,7 @@ import {
     SiTailwindcss,
     SiMysql,
     SiGithub,
-    SiShadcnui 
+    SiShadcnui
 } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 
@@ -56,14 +56,14 @@ export const personalProjects: Project[] = [
         name: 'Plan Ahead',
         description: 'Desenvolvimento próprio com foco em aprendizado, criatividade e usabilidade. Um aplicativo para organizar e gerenciar atividades do dia a dia de forma prática e eficiente. Ele ajuda as pessoas a não esquecerem compromissos, tarefas ou itens que precisam comprar.',
         tecnologias: 'Reactjs, Nextjs, Typescript, Shadcn-ui e Tailwindcss',
-        tec: [ 
-            <SiReact size={19}/>,
-            <RiNextjsFill size={22}/>,
+        tec: [
+            <SiReact size={19} />,
+            <RiNextjsFill size={22} />,
             <SiShadcnui />,
             <SiTailwindcss />,
             <SiTypescript />
         ]
-    
+
     },
 
     {
@@ -74,20 +74,20 @@ export const personalProjects: Project[] = [
         name: 'Tmakiclub Zap',
         description: 'Desenvolvi um sistema de pedidos online integrado ao WhatsApp, voltado para pequenos comércios como docerias, lanchonetes e restaurantes. O cliente acessa um catálogo digital com produtos, imagens, preços e descrições, seleciona os itens desejados e, ao final, o sistema gera automaticamente uma mensagem com os detalhes do pedido, pronta para ser enviada ao WhatsApp da loja com um clique.',
         tecnologias: 'Reactjs, Nextjs, Typescript, Shadcn-ui, Tailwindcss e bibliotecas: zustand, zod, i18next e Api viacep',
-        tec: [ 
-            <SiReact size={19}/>,
-            <RiNextjsFill size={22}/>,
+        tec: [
+            <SiReact size={19} />,
+            <RiNextjsFill size={22} />,
             <SiShadcnui />,
             <SiTailwindcss />,
             <SiTypescript />
         ]
-        
-        
+
+
     }
 ]
 
 export const academicProjects: Project[] = [
-    
+
     {
         demo: 'https://whats-app-clone-chi.vercel.app/',
         github: 'https://github.com/walacer72/WhatsApp-Clone',
@@ -95,7 +95,7 @@ export const academicProjects: Project[] = [
         smart: '',
         name: 'WhatsApp-Clone',
         description: 'Projeto em aula de um clone do WhatsApp desenvolvido com React.js, CSS e Material UI, integrando funcionalidades de envio de mensagens em tempo real e autenticação de usuários. O Firebase foi utilizado como backend (BaaS), permitindo armazenamento de dados e sincronização instantânea. O foco do projeto foi aplicar boas práticas de desenvolvimento front-end e criar uma experiência de usuário moderna e responsiva.',
-        tecnologias: 'Reactjs, css, biblioteca material UI e BaaS firebase',
+        tecnologias: 'Reactjs, css, biblioteca material UI e (BaaS) firebase',
         tec: []
     },
     {
@@ -104,8 +104,8 @@ export const academicProjects: Project[] = [
         pc: calculadoraIMC,
         smart: '',
         name: 'Calculadora de IMC',
-        description: 'Projeto em aula',
-        tecnologias: '',
+        description: 'Este projeto foi desenvolvido em aula como prática de ReactJS, consistindo em uma aplicação que calcula o Índice de Massa Corporal (IMC) a partir dos dados de peso e altura informados pelo usuário. O resultado é exibido junto à classificação correspondente (abaixo do peso, peso ideal, sobrepeso, obesidade, etc). A aplicação foi construída com componentes reutilizáveis, utilização de hook do React(useState) e estilização com CSS3/ TailwindCSS, garantindo um layout moderno.',
+        tecnologias: 'Reactjs, typescript e tailwindCSS.',
         tec: []
     },
     {
