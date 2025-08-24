@@ -38,7 +38,7 @@ export const personalProjects: Project[] = [
         pc: mariaDocesPc,
         smart: mariaDocesSmart,
         name: 'Maria doces',
-        description: 'Criação própria, do design ao código. Desenvolvi um site responsivo e moderno para a confeitaria Maria Doces, com foco na divulgação dos produtos artesanais e no contato fácil via WhatsApp para pedidos e orçamentos. O site apresenta bolos, doces, tortas e lembrancinhas com imagens e descrições, pensado especialmente para encomendas personalizadas.',
+        description: 'Criação própria, do design ao código. Desenvolvi um site responsivo e moderno para a confeitaria Maria Doces, com foco na divulgação dos produtos artesanais e no contato fácil via WhatsApp para pedidos e orçamentos. O site apresenta bolos e doces com imagens e descrições, pensado especialmente para encomendas personalizadas.',
         tecnologias: 'Html5, Css3, Javascript, Api formsubmit e biblioteca AOS pra animação de scroll',
         tec: [
             <SiHtml5 />,
@@ -54,7 +54,7 @@ export const personalProjects: Project[] = [
         pc: planAheadPc,
         smart: planAheadSmart,
         name: 'Plan Ahead',
-        description: 'Desenvolvimento próprio com foco em aprendizado, criatividade e usabilidade. Um aplicativo para organizar e gerenciar atividades do dia a dia de forma prática e eficiente. Ele ajuda as pessoas a não esquecerem compromissos, tarefas ou itens que precisam comprar.',
+        description: 'Desenvolvimento próprio com foco em aprendizado, criatividade e usabilidade. Um aplicativo para organizar e gerenciar atividades do dia a dia de forma prática e eficiente. Ele ajuda as pessoas a não esquecerem compromissos, listar tarefas, fazer listas de compras e ainda manter um controle financeiro simples e acessível.',
         tecnologias: 'Reactjs, Nextjs, Typescript, Shadcn-ui e Tailwindcss',
         tec: [
             <SiReact size={19} />,
@@ -72,7 +72,7 @@ export const personalProjects: Project[] = [
         pc: tmakiZapPc,
         smart: tmakiZapSmart,
         name: 'Tmakiclub Zap',
-        description: 'Desenvolvi um sistema de pedidos online integrado ao WhatsApp, voltado para pequenos comércios como docerias, lanchonetes e restaurantes. O cliente acessa um catálogo digital com produtos, imagens, preços e descrições, seleciona os itens desejados e, ao final, o sistema gera automaticamente uma mensagem com os detalhes do pedido, pronta para ser enviada ao WhatsApp da loja com um clique.',
+        description: 'Desenvolvi um sistema de pedidos online integrado ao WhatsApp, voltado para pequenos comércios. O cliente acessa um catálogo digital com produtos, imagens, preços e descrições, seleciona os itens desejados e, ao final, o sistema gera automaticamente uma mensagem com os detalhes do pedido, pronta para ser enviada ao WhatsApp da loja com um clique.',
         tecnologias: 'Reactjs, Nextjs, Typescript, Shadcn-ui, Tailwindcss e bibliotecas: zustand, zod, i18next e Api viacep',
         tec: [
             <SiReact size={19} />,
@@ -94,7 +94,7 @@ export const academicProjects: Project[] = [
         pc: whatsAppClone,
         smart: '',
         name: 'WhatsApp-Clone',
-        description: 'Projeto em aula de um clone do WhatsApp desenvolvido com React.js, CSS e Material UI, integrando funcionalidades de envio de mensagens em tempo real e autenticação de usuários. O Firebase foi utilizado como backend (BaaS), permitindo armazenamento de dados e sincronização instantânea. O foco do projeto foi aplicar boas práticas de desenvolvimento front-end e criar uma experiência de usuário moderna e responsiva.',
+        description: 'Projeto em aula de um clone do WhatsApp desenvolvido com React.js, CSS e Material UI, integrando funcionalidades de envio de mensagens em tempo real e autenticação de usuários. O Firebase foi utilizado como backend (BaaS), permitindo armazenamento de dados e sincronização instantânea.',
         tecnologias: 'Reactjs, css, biblioteca material UI e (BaaS) firebase',
         tec: []
     },
@@ -104,7 +104,7 @@ export const academicProjects: Project[] = [
         pc: calculadoraIMC,
         smart: '',
         name: 'Calculadora de IMC',
-        description: 'Este projeto foi desenvolvido em aula como prática de ReactJS, consistindo em uma aplicação que calcula o Índice de Massa Corporal (IMC) a partir dos dados de peso e altura informados pelo usuário. O resultado é exibido junto à classificação correspondente (abaixo do peso, peso ideal, sobrepeso, obesidade, etc). A aplicação foi construída com componentes reutilizáveis, utilização de hook do React(useState) e estilização com CSS3/ TailwindCSS, garantindo um layout moderno.',
+        description: 'Este projeto foi desenvolvido em aula como prática de ReactJS, consistindo em uma aplicação que calcula o Índice de Massa Corporal (IMC) a partir dos dados de peso e altura informados pelo usuário. O resultado é exibido junto à classificação correspondente (abaixo do peso, peso ideal, sobrepeso, obesidade, etc).',
         tecnologias: 'Reactjs, typescript e tailwindCSS.',
         tec: []
     },
@@ -114,8 +114,8 @@ export const academicProjects: Project[] = [
         pc: jogoDaMemoria,
         smart: '',
         name: 'Jogo da Memoria',
-        description: 'Projeto em aula',
-        tecnologias: '',
+        description: 'Este projeto foi desenvolvido em aula como prática de ReactJS, com foco em lógica de programação, manipulação de estado e interatividade. O jogo desafia o usuário a encontrar pares de cartas iguais, estimulando memória e concentração. Além da prática com componentes e hooks, o projeto também explora responsividade e uma interface leve e intuitiva.',
+        tecnologias: 'Reactjs, typescript e styled-components',
         tec: []
     },
     {
@@ -124,8 +124,8 @@ export const academicProjects: Project[] = [
         pc: pizzaria,
         smart: '',
         name: 'Pizza',
-        description: 'Projeto em aula',
-        tecnologias: '',
+        description: 'Projeto simples desenvolvido em JavaScript puro, simulando um sistema de pedidos online. O usuário pode escolher tamanhos de pizza, definir quantidades e adicionar os itens ao carrinho de compras. O foco foi praticar manipulação do DOM, lógica de programação e atualização dinâmica da interface, resultando em uma aplicação interativa e intuitiva.',
+        tecnologias: 'Javascript, html e css',
         tec: []
     },
     {
@@ -134,8 +134,8 @@ export const academicProjects: Project[] = [
         pc: urnaEletronica,
         smart: '',
         name: 'Urna Eletronica',
-        description: 'Projeto em aula',
-        tecnologias: '',
+        description: 'Projeto simples desenvolvido em JavaScript puro, simulando o funcionamento de uma urna eletrônica. O usuário pode digitar números de candidatos, confirmar, corrigir ou votar em branco. Ao confirmar o voto aparece o candidato votado. O foco foi praticar manipulação do DOM, estrutura de dados e lógica de programação, criando uma experiência interativa e próxima do uso real.',
+        tecnologias: 'Javascript, html e css',
         tec: []
     },
     {
@@ -144,8 +144,8 @@ export const academicProjects: Project[] = [
         pc: quizDev,
         smart: '',
         name: 'QuizDev',
-        description: 'Projeto em aula',
-        tecnologias: '',
+        description: 'Projeto desenvolvido em JavaScript puro, simulando um jogo de perguntas e respostas. O usuário escolhe entre alternativas, recebe o feedback de acertos e erros e, ao final, pode visualizar sua pontuação. O objetivo foi praticar manipulação do DOM, controle de estados e lógica condicional, resultando em uma aplicação interativa, simples e divertida.',
+        tecnologias: 'Javascript, html e css',
         tec: []
     }
 
