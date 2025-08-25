@@ -20,7 +20,7 @@ const ProjectItem = ({ item }: Props) => {
 
                 <div className="flex flex-col z-0">
                     <div className="flex justify-between items-center pb-4">
-                        <h3 className='font-semibold text-lg'>{item.name}</h3>
+                        <h3 className='font-semibold text-base md:text-lg'>{item.name}</h3>
                         <div className="flex justify-center items-center gap-2 md:gap-4 text-card">
                             {item.tec.map((item, index) => (
                                 <div key={index} className="">{item}</div>
