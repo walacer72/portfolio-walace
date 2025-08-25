@@ -4,12 +4,13 @@ import Skills from '@/components/Skills';
 import Project from '@/components/Project';
 import Contact from '@/components/Contact';
 import { Aboult } from '@/components/about';
+import { Footer } from '@/components/footer';
 
 
 export default () => {
   return (
 
-    <div className="flex flex-col min-h-screen w-full subpixel-antialiased">
+    <div className="flex flex-col min-h-screen w-full subpixel-antialiased overflow-x-hidden">
 
       <nav className='fixed top-4 right-0 left-0 z-50'>
         <Header />
@@ -22,6 +23,7 @@ export default () => {
         <Skills />
         <Project />
         <Contact />
+        <Footer />
       </main>
 
 
