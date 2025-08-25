@@ -20,7 +20,7 @@ export const Icons = () => {
             <a
                 rel="noopener noreferrer"
                 target='_blank'
-                href="">
+                href="https://www.instagram.com/walace_dev/?utm_source=qr&igsh=d3J0NXc0MzMxajA%3D#">
                 <BiLogoInstagram className='w-8 h-8 md:h-10 md:w-10 cursor-pointer rounded-full border-transparent bg-sky-700 p-1 md:p-2 text-white transition-all duration-200 hover:scale-110 hover:border-sky-800 hover:bg-slate-300 hover:text-sky-700' />
             </a>
 

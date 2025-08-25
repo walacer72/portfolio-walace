@@ -48,27 +48,33 @@ const ProjectItem = ({ item }: Props) => {
                 </div>
 
 
-
-                <div className="flex gap-5 text-xs mt-2 justify-between text-primary-foreground">
+                <div className="flex gap-5 text-xs mt-2 justify-between text-primary-foreground font-medium">
                     <a
-                        className='transition-all duration-200 py-2 px-4 inline-block cursor-pointer rounded-full hover:opacity-80'
-                        href={item.demo} target='_blank'>
+                        className="transition ease-in duration-200 py-2 px-4 inline-block cursor-pointer border border-transparent hover:opacity-80 [transform:translateZ(0)]"
+                        href={item.demo}
+                        target="_blank"
+                    >
                         Demo
                     </a>
 
                     <a
-                        className=' transition-all duration-200 py-2 px-4 inline-block cursor-pointer rounded-full hover:opacity-80'
-                        href={item.github} target='_blank'>
+                        className="transition ease-in duration-200 py-2 px-4 inline-block cursor-pointer border border-transparent hover:opacity-80 [transform:translateZ(0)]"
+                        href={item.github}
+                        target="_blank"
+                    >
                         GitHub
                     </a>
 
-                    <button
+                    <a
                         onMouseEnter={() => setDescriptShow(true)}
                         onMouseLeave={() => setDescriptShow(false)}
-                        className="transition-all duration-200 py-2 px-4 rounded-full hover:opacity-50 text-sky-800">
+                        className="transition ease-in duration-200 py-2 px-4 inline-block cursor-pointer border border-transparent text-sky-800 hover:opacity-80 [transform:translateZ(0)]"
+                    >
                         Ver mais
-                    </button>
+                    </a>
                 </div>
+
+
 
             </div>
 
