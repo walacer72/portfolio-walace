@@ -153,7 +153,7 @@ export const academicProjects: Project[] = [
         pc: urnaEletronica,
         smart: '',
         name: 'Urna Eletronica',
-        description: 'Projeto simples desenvolvido em JavaScript puro, simulando o funcionamento de uma urna eletrônica. O usuário pode digitar números de candidatos, confirmar, corrigir ou votar em branco. Ao confirmar o voto aparece o candidato votado. O foco foi praticar manipulação do DOM, estrutura de dados e lógica de programação, criando uma experiência interativa e próxima do uso real.',
+        description: 'Projeto simples desenvolvido em JavaScript puro, simulando o funcionamento de uma urna eletrônica. O usuário pode digitar números de candidatos, confirmar, corrigir ou votar em branco. Ao confirmar o voto aparece o candidato votado. O foco foi praticar manipulação do DOM, estrutura de dados e lógica de programação.',
         tecnologias: 'Javascript, html e css',
         tec: [
             <SiHtml5 />,

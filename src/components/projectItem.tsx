@@ -14,7 +14,7 @@ const ProjectItem = ({ item }: Props) => {
 
     return (
 
-        <li className={`relative w-full rounded-lg min-h-[290px] md:min-h-[270px] text-primary-foreground shadow-[0_0_10px_rgba(100,100,100,0.5)] dark:shadow-[0_0_10px_rgba(255,255,255,0.1)] bg-background p-4 transition-all duration-300 dark:border dark:border-stone-950 hover:border-stone-800 md:hover:scale-105`}>
+        <li className={`relative w-full rounded-lg min-h-[300px] md:min-h-[270px] text-primary-foreground shadow-[0_0_10px_rgba(100,100,100,0.5)] dark:shadow-[0_0_10px_rgba(255,255,255,0.1)] bg-background p-4 transition-all duration-300 dark:border dark:border-stone-950 hover:border-stone-800 md:hover:scale-105`}>
 
             <div className="flex flex-col h-full gap-4 justify-between">
 
