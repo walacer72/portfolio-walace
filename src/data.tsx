@@ -30,10 +30,28 @@ import quizDev from "../public/pc/quizDev.jpg"
 import urnaEletronica from "../public/pc/urnaEletronica.jpg"
 import calculadoraIMC from "../public/pc/calculadoraIMC.jpg"
 import devMemorySmart from "../public/smartphone/devMemory.jpg"
+import fynanSysPc from "../public/pc/finanSys.jpg";
 import { Project } from './projectType';
 
 
 export const personalProjects: Project[] = [
+    {
+        demo: 'https://finansys-teal.vercel.app/',
+        github: 'https://github.com/walacer72/finansys',
+        pc: fynanSysPc,
+        smart: '',
+        name: 'FinanSys',
+        description: 'Finansys é um aplicativo web para controle financeiro pessoal, desenvolvido com o objetivo de praticar Next.js, Context API, TypeScript e Tailwind CSS. Com ele, o usuário pode registrar entradas, saídas e acompanhar o saldo total, tudo de forma simples e intuitiva.',
+        tecnologias: 'Reactjs, Nextjs, Typescript, Shadcn-ui e Tailwindcss',
+        tec: [
+            <SiReact size={18} />,
+            <RiNextjsFill size={22} />,
+            <SiShadcnui />,
+            <SiTailwindcss />,
+            <SiTypescript />
+        ]
+
+    },
     {
         demo: 'https://walacer72.github.io/Maria-Doces',
         github: 'https://github.com/walacer72/Maria-Doces',
@@ -91,7 +109,7 @@ export const personalProjects: Project[] = [
 export const academicProjects: Project[] = [
 
     {
-        demo: 'https://whats-app-clone-chi.vercel.app/',
+        demo: 'https://whats-appdev-chi.vercel.app/',
         github: 'https://github.com/walacer72/WhatsApp-Clone',
         pc: whatsAppClone,
         smart: '',
