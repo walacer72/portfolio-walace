@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { useForm } from "react-hook-form"
 import { z } from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
-import { Icons } from "@/components/icons"
+import { Icons } from "./icons"
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
 

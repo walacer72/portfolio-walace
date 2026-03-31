@@ -1,8 +1,8 @@
 'use client'
 
-import { personalProjects, academicProjects } from '@/data';
+import { personalProjects, academicProjects } from '../data';
 import React, { useState } from 'react'
-import ProjectItem from '@/components/projectItem';
+import ProjectItem from './projectItem';
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
 

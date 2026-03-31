@@ -1,6 +1,6 @@
 'use client'
 
-import { Project } from "@/projectType";
+import { Project } from "../projectType";
 import Image from "next/image";
 import { useState } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";

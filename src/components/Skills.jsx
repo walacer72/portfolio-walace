@@ -1,6 +1,6 @@
 'use client'
 
-import { Habilidades, Tecnologias } from "@/data";
+import { Habilidades, Tecnologias } from "../data";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
 
