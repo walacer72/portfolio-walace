@@ -5,7 +5,7 @@ import { Download } from "lucide-react";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
 import { personalProjects as personal, academicProjects as academic} from '../data'
-import { Counter } from "../components/ui/Counter";
+import { Counter } from "@/components/ui/Counter";
 
 export const Aboult = () => {
 
