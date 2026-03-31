@@ -4,7 +4,7 @@ import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { useInView } from "framer-motion";
 
-const Counter = ({ value }: { value: number }) => {
+export const Counter = ({ value }: { value: number }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -29,4 +29,3 @@ const Counter = ({ value }: { value: number }) => {
   );
 };
 
-export default Counter;
