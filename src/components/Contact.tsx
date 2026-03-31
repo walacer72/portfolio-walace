@@ -95,19 +95,27 @@ const Contact = () => {
               <div className="w-full flex flex-col md:flex-row gap-4">
 
                 <label className='w-full flex flex-col gap-2'>
+
                   <p className='text-sm text-primary pl-4'>Nome</p>
+
                   <input {...register('name')} className='w-full flex rounded-full text-sm h-8 md:h-10 p-2 px-6 outline-none bg-background shadow-sm shadow-slate-700 text-slate-500' />
+
                   <div className="h-4">
                     {errors.name?.message && <p className="text-sky-400 text-sm">{errors.name.message}</p>}
                   </div>
+
                 </label>
 
                 <label className='w-full flex flex-col gap-2'>
+
                   <p className="text-sm text-primary pl-4">E-mail</p>
-                  <input {...register('email')} className='w-full rounded-full h-8 md:h-10 text-sm p-2 px-6 outline-none bg-background shadow-sm shadow-slate-700 text-slate-500' />
+
+                  <input {...register('email')} className='w-full flex rounded-full text-sm h-8 md:h-10 p-2 px-6 outline-none bg-background shadow-sm shadow-slate-700 text-slate-500' />
+
                   <div className="h-4">
                     {errors.email?.message && <p className="text-sky-400 text-sm">{errors.email.message}</p>}
                   </div>
+
                 </label>
               </div>
 

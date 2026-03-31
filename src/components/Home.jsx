@@ -7,7 +7,7 @@ import { delay, motion } from "framer-motion";
 
 const Home = () => {
 
-    const text = 'Construindo experiências web modernas e acessíveis com foco em performance e usabilidade';
+    const text = 'Desenvolvedor Fullstack focado em construir aplicações completas, conectando frontend, backend e banco de dados com tecnologias modernas como React, Node.js e TypeScript.';
 
     return (
         <section
