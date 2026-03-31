@@ -5,6 +5,8 @@ import { useForm } from "react-hook-form"
 import { z } from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { Icons } from "@/components/icons"
+import { useScroll, useTransform, motion } from "framer-motion";
+import { useRef } from "react";
 
 const Contact = () => {
   const [formShow, setFormShow] = useState(false);
@@ -19,6 +21,16 @@ const Contact = () => {
     useForm<z.infer<typeof formSchema>>({
       resolver: zodResolver(formSchema),
     })
+
+  const ref = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], [50, 0]);
+  const opacity = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
@@ -54,9 +66,19 @@ const Contact = () => {
       className='min-h-[calc(100vh-44px)] md:min-h-screen lg:min-h-screen mt-10 w-full flex justify-center items-center'
     >
       <div className="w-full h-full max-w-6xl flex flex-col justify-center items-center p-4 mx-4">
-        <h1 className='bg-gradient-to-r from-slate-950 to-sky-400 dark:from-sky-800 dark:to-sky-50 bg-clip-text text-lg text-center md:text-2xl font-semibold text-transparent'>
+
+        <motion.h1
+          className='bg-gradient-to-r from-slate-950 to-sky-400 dark:from-sky-800 dark:to-sky-50 
+          bg-clip-text py-4 text-lg text-center md:text-2xl font-semibold text-transparent'
+          ref={ref}
+          style={{ y, opacity }}
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
           Procurando alguém para somar no seu time?
-        </h1>
+        </motion.h1>
 
         <div className="w-full md:mt-12 gap-8 flex flex-col md:flex-row justify-between md:p-4">
           <div className="flex-1 flex flex-col items-center md:items-start justify-between p-4 md:p-8">
@@ -66,11 +88,12 @@ const Contact = () => {
             <Icons />
           </div>
 
-          <div className={`bg-[rgba(0,0,0,0.1)] dark:bg-black rounded-3xl flex flex-1 justify-center items-center ${formShow ? 'pt-8 pb-4 md:pt-12 md:pb-8':'py-8 md:py-12' } px-4 md:px-8`}>
+          <div className={`bg-[rgba(0,0,0,0.1)] dark:bg-black rounded-3xl flex flex-1 justify-center items-center ${formShow ? 'pt-8 pb-4 md:pt-12 md:pb-8' : 'py-8 md:py-12'} px-4 md:px-8`}>
 
             <form onSubmit={handleSubmit(onSubmit)} className="w-full flex flex-col gap-2 font-roboto100">
 
-              <div className="w-full flex flex-row gap-4">
+              <div className="w-full flex flex-col md:flex-row gap-4">
+
                 <label className='w-full flex flex-col gap-2'>
                   <p className='text-sm text-primary pl-4'>Nome</p>
                   <input {...register('name')} className='w-full flex rounded-full text-sm h-8 md:h-10 p-2 px-6 outline-none bg-background shadow-sm shadow-slate-700 text-slate-500' />

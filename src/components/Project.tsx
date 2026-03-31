@@ -3,6 +3,8 @@
 import { personalProjects, academicProjects } from '@/data';
 import React, { useState } from 'react'
 import ProjectItem from '@/components/projectItem';
+import { useScroll, useTransform, motion } from "framer-motion";
+import { useRef } from "react";
 
 type Tab = 'tab1' | 'tab2';
 
@@ -11,14 +13,33 @@ const Project = () => {
 
   const [tab, setTab] = useState<Tab>('tab1');
 
+  const ref = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], [30, 0]);
+  const opacity = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+
+
   return (
 
     <section id='Projects' className='min-h-[calc(100vh-44px)] md:min-h-screen lg:min-h-screen w-full flex justify-center items-center'>
       <div className="w-full h-full max-w-6xl flex flex-col items-center justify-center gap-2 p-4 mt-28 md:p-0">
 
-        <h1 className='bg-gradient-to-r from-slate-950 to-sky-400 dark:from-sky-800 dark:to-sky-50 bg-clip-text font-semibold text-transparent text-4xl'>
+        <motion.h1
+          className='bg-gradient-to-r from-slate-950 to-sky-400 dark:from-sky-800 dark:to-sky-50 bg-clip-text font-semibold text-transparent text-4xl'
+          ref={ref}
+          style={{ y, opacity }}
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
           Projetos
-        </h1>
+        </motion.h1>
 
         <div className="flex justify-center gap-4 items-center text-slate-400 mt-4">
           <div
@@ -49,7 +70,7 @@ const Project = () => {
 
             <ul className='w-full grid grid-cols-1 lg:grid-cols-3 gap-8 mt-8 mb-4 px-8 md:px-4 '>
               {personalProjects.map((item, index) => (
-                <ProjectItem item={item} key={index} />
+                <ProjectItem item={item} key={index} index={index} />
               ))}
             </ul>
           </div>
@@ -66,7 +87,7 @@ const Project = () => {
 
             <ul className='w-full grid grid-cols-1 lg:grid-cols-3 gap-8 mt-8 mb-4 px-8 md:px-4'>
               {academicProjects.map((item, index) => (
-                <ProjectItem item={item} key={index} />
+                <ProjectItem item={item} key={index} index={index} />
               ))}
             </ul>
           </div>

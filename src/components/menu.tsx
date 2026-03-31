@@ -13,31 +13,31 @@ export const Menu = () => {
 
     const handleButtonShow = (index: number) => {
         setKey(index);
-        
+
     }
 
     useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const index = lista.findIndex((id) => id === entry.target.id)
-            if (index !== -1) {
-              setKey(index)
-            }
-          }
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const index = lista.findIndex((id) => id === entry.target.id)
+                        if (index !== -1) {
+                            setKey(index)
+                        }
+                    }
+                })
+            },
+            { threshold: 0.6 } // só ativa se 60% da seção estiver visível
+        )
+
+        lista.forEach((id) => {
+            const el = document.getElementById(id)
+            if (el) observer.observe(el)
         })
-      },
-      { threshold: 0.6 } // só ativa se 60% da seção estiver visível
-    )
 
-    lista.forEach((id) => {
-      const el = document.getElementById(id)
-      if (el) observer.observe(el)
-    })
-
-    return () => observer.disconnect()
-  }, [])
+        return () => observer.disconnect()
+    }, [])
 
     return (
         <>
@@ -48,9 +48,9 @@ export const Menu = () => {
                     <li key={index} className='flex items-center cursor-pointer font-light transition-all duration-200 group sm:text-sm md:text-base xl:text-base'>
 
                         <a
-                            
+
                             onClick={() => handleButtonShow(index)}
-                            className={`transition-all ease-in duration-200 hover:-translate-y-1 ${key === index ? 'text-sky-700': ''}`}
+                            className={`transition-all ease-in duration-200 hover:-translate-y-1 ${key === index ? 'text-sky-700' : ''}`}
                             href={`#${item}`}
                         >
                             {item === 'Home' && <AiFillHome className='w-6 h-6' />}
@@ -70,9 +70,9 @@ export const Menu = () => {
                     <li key={index} className='flex items-center cursor-pointer font-light transition-all duration-200 group sm:text-sm md:text-base xl:text-base'>
 
                         <a
-                            
+
                             onClick={() => handleButtonShow(index)}
-                            className={`transition-all ease-in duration-200 hover:-translate-y-1 ${key === index ? 'text-sky-700': ''}`}
+                            className={`transition-all ease-in duration-200 hover:-translate-y-1 ${key === index ? 'text-sky-700' : ''}`}
                             href={`#${item}`}
                         >
                             {item === 'Home' && 'Início'}

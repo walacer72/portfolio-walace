@@ -8,10 +8,10 @@ import {
     SiReact,
     SiTypescript,
     SiTailwindcss,
-    SiMysql,
     SiGithub,
     SiShadcnui,
-    SiFirebase
+    SiFirebase,
+    SiFramer
 } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 
@@ -203,9 +203,9 @@ export const Tecnologias = [
     { image: <SiReact />, tec: 'ReactJS', pct: 70 },
     { image: <SiTypescript />, tec: 'Typescript', pct: 100 },
     { image: <SiTailwindcss />, tec: 'Tailwind', pct: 100 },
-    { image: <SiMysql size={25} />, tec: 'MySQL', pct: 70 },
+    { image: <SiFramer size={25} />, tec: 'Framer Motion', pct: 70 },
     { image: <SiGithub />, tec: 'Github', pct: 50 }
 ]
 
 
-export const Habilidades = ['Comunicação', 'Trabalho em equipe', 'Proatividade', 'Organização e gestão', 'Resolução de problemas', 'Aprendizado contínuo', 'Adaptabilidade', 'Empatia']
+export const Habilidades = ['Node.js', 'Express', 'Prisma', 'MySQL', 'MongoDB', 'Postgree', 'Criação de API', 'Multer e Sharp']

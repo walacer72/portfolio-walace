@@ -3,18 +3,28 @@
 import { Project } from "@/projectType";
 import Image from "next/image";
 import { useState } from "react";
+import { useScroll, useTransform, motion } from "framer-motion";
 
 type Props = {
     item: Project;
+    index: number;
 }
 
-const ProjectItem = ({ item }: Props) => {
+const ProjectItem = ({ item, index }: Props) => {
 
     const [descriptShow, setDescriptShow] = useState(false);
 
     return (
 
-        <li className={`relative w-full rounded-lg min-h-[300px] md:min-h-[270px] text-primary-foreground shadow-[0_0_10px_rgba(100,100,100,0.5)] dark:shadow-[0_0_10px_rgba(255,255,255,0.1)] bg-background p-4 transition-all duration-300 dark:border dark:border-stone-950 hover:border-stone-800 md:hover:scale-105`}>
+        <motion.div
+            key={index} // ✅ chave única
+            className={`relative w-full rounded-lg min-h-[300px] md:min-h-[270px] text-primary-foreground shadow-[0_0_10px_rgba(100,100,100,0.5)] dark:shadow-[0_0_10px_rgba(255,255,255,0.1)] bg-background p-4 transition-all duration-300 dark:border dark:border-stone-950 hover:border-stone-800 md:hover:scale-105`}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.2 }}
+            viewport={{ once: true }}
+        >
+
 
             <div className="flex flex-col h-full gap-4 justify-between">
 
@@ -35,7 +45,7 @@ const ProjectItem = ({ item }: Props) => {
 
                     {item.smart ? (
                         <Image
-                            className={`$md:hidden lg:hidden rounded-lg border-4 border-zinc-300 dark:border-none`}
+                            className={`w-full md:hidden lg:hidden rounded-lg border-4 border-zinc-300 dark:border-none`}
                             src={item.smart} alt={item.name}
                         />
                     ) : item.pc ? (
@@ -86,8 +96,8 @@ const ProjectItem = ({ item }: Props) => {
                 <p className="text-xs tracking-wider text-primary-foreground/60">{item.tecnologias}</p>
             </div>
 
-        </li>
 
+        </motion.div>
     )
 }
 
