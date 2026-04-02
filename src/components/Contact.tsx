@@ -80,19 +80,22 @@ const Contact = () => {
           Procurando alguém para somar no seu time?
         </motion.h1>
 
-        <div className="w-full md:mt-12 gap-8 flex flex-col md:flex-row justify-between md:p-4">
+        <div className="w-full md:mt-12 gap-2 md:gap-8 flex flex-col md:flex-row justify-between md:p-4">
           <div className="flex-1 flex flex-col items-center md:items-start justify-between p-4 md:p-8">
             <h3 className='text-sm md:text-md text-primary-foreground text-center md:text-start md:leading-relaxed mb-8 md:mb-0'>
               Acredito que bons resultados vêm da combinação entre esforço, responsabilidade e trabalho em equipe. Estou pronto para contribuir em projetos desafiadores e crescer junto com profissionais que também buscam excelência.
             </h3>
+          
             <Icons />
+          
+            
           </div>
 
-          <div className={`bg-[rgba(0,0,0,0.1)] dark:bg-black rounded-3xl flex flex-1 border md:border-transparent justify-center items-center ${formShow ? 'pt-8 pb-4 md:pt-12 md:pb-8' : 'py-8 md:py-12'} px-4 md:px-8`}>
+          <div className={`bg-[rgba(0,0,0,0.1)] dark:bg-black rounded-3xl flex flex-1 border md:border-transparent justify-center items-center ${formShow ? 'pt-8 pb-4 md:pt-12 md:pb-8' : 'py-6 md:py-12'} px-4 md:px-8`}>
 
             <form onSubmit={handleSubmit(onSubmit)} className="w-full flex flex-col gap-2 font-roboto100">
 
-              <div className="w-full flex flex-col md:flex-row">
+              <div className="w-full flex flex-col md:flex-row gap-4">
 
                 <label className='w-full flex flex-col gap-2'>
 

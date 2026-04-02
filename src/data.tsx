@@ -11,8 +11,13 @@ import {
     SiGithub,
     SiShadcnui,
     SiFirebase,
-    SiFramer
+    SiFramer,
+    SiExpress,
+    SiPrisma,
+    SiMongodb,
+    SiPostgresql 
 } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 
 // IMAGES PROJECTS
@@ -32,6 +37,37 @@ import calculadoraIMC from "../public/pc/calculadoraIMC.jpg"
 import devMemorySmart from "../public/smartphone/devMemory.jpg"
 import fynanSysPc from "../public/pc/finanSys.jpg";
 import { Project } from './projectType';
+
+export const Stacks = [
+    { image: <SiHtml5 size={15} />, tec: 'Html5', pct: 100 },
+    { image: <SiCss3 size={15} />, tec: 'Css3', pct: 100 },
+    { image: <SiJavascript size={15} />, tec: 'Javascript', pct: 100 },
+    { image: <SiReact size={15} />, tec: 'React', pct: 70 },
+    { image: <SiTypescript size={15} />, tec: 'Typescript', pct: 100 },
+    { image: <SiTailwindcss size={15} />, tec: 'Tailwind', pct: 100 },
+    { image: <SiFramer size={15} />, tec: 'Framer Motion', pct: 70 },
+    { image: <SiGithub size={15} />, tec: 'Github', pct: 50 },
+    { image: <FaNodeJs size={15} />, tec: 'Node', pct: 50 },
+    { image: <SiExpress size={15} />, tec: 'Express', pct: 50 },
+    { image: <SiPrisma size={15} />, tec: 'Prisma', pct: 50 },
+    { image: <SiMongodb size={15} />, tec: 'MongoDB', pct: 50 },
+    { image: <SiPostgresql size={15} />, tec: 'PostgreSQL', pct: 70 },
+    
+]
+
+export const Tecnologias = [
+    { image: <SiHtml5 />, tec: 'Html5', pct: 100 },
+    { image: <SiCss3 />, tec: 'Css3', pct: 100 },
+    { image: <SiJavascript />, tec: 'Javascript', pct: 100 },
+    { image: <SiReact />, tec: 'React', pct: 70 },
+    { image: <SiTypescript />, tec: 'Typescript', pct: 100 },
+    { image: <SiTailwindcss />, tec: 'Tailwind', pct: 100 },
+    { image: <SiFramer size={25} />, tec: 'Framer Motion', pct: 70 },
+    { image: <SiGithub />, tec: 'Github', pct: 50 }
+]
+
+
+export const Habilidades = ['Node.js', 'Express', 'Prisma', 'MySQL', 'MongoDB', 'Postgree', 'Criação de API', 'Multer e Sharp']
 
 
 export const personalProjects: Project[] = [
@@ -196,16 +232,3 @@ export const academicProjects: Project[] = [
 
 ]
 
-export const Tecnologias = [
-    { image: <SiHtml5 />, tec: 'Html5', pct: 100 },
-    { image: <SiCss3 />, tec: 'Css3', pct: 100 },
-    { image: <SiJavascript />, tec: 'Javascript', pct: 100 },
-    { image: <SiReact />, tec: 'ReactJS', pct: 70 },
-    { image: <SiTypescript />, tec: 'Typescript', pct: 100 },
-    { image: <SiTailwindcss />, tec: 'Tailwind', pct: 100 },
-    { image: <SiFramer size={25} />, tec: 'Framer Motion', pct: 70 },
-    { image: <SiGithub />, tec: 'Github', pct: 50 }
-]
-
-
-export const Habilidades = ['Node.js', 'Express', 'Prisma', 'MySQL', 'MongoDB', 'Postgree', 'Criação de API', 'Multer e Sharp']
