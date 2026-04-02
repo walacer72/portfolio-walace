@@ -88,17 +88,17 @@ const Contact = () => {
             <Icons />
           </div>
 
-          <div className={`bg-[rgba(0,0,0,0.1)] dark:bg-black rounded-3xl flex flex-1 justify-center items-center ${formShow ? 'pt-8 pb-4 md:pt-12 md:pb-8' : 'py-8 md:py-12'} px-4 md:px-8`}>
+          <div className={`bg-[rgba(0,0,0,0.1)] dark:bg-black rounded-3xl flex flex-1 border md:border-transparent justify-center items-center ${formShow ? 'pt-8 pb-4 md:pt-12 md:pb-8' : 'py-8 md:py-12'} px-4 md:px-8`}>
 
             <form onSubmit={handleSubmit(onSubmit)} className="w-full flex flex-col gap-2 font-roboto100">
 
-              <div className="w-full flex flex-col md:flex-row gap-4">
+              <div className="w-full flex flex-col md:flex-row">
 
                 <label className='w-full flex flex-col gap-2'>
 
                   <p className='text-sm text-primary pl-4'>Nome</p>
 
-                  <input {...register('name')} className='w-full flex rounded-full text-sm h-8 md:h-10 p-2 px-6 outline-none bg-background shadow-sm shadow-slate-700 text-slate-500' />
+                  <input {...register('name')} className='w-full flex rounded-full text-sm h-8 md:h-10 p-2 px-6 outline-none bg-background shadow-sm shadow-slate-700 text-slate-500 border md:border-transparent' />
 
                   <div className="h-4">
                     {errors.name?.message && <p className="text-sky-400 text-sm">{errors.name.message}</p>}
@@ -110,7 +110,7 @@ const Contact = () => {
 
                   <p className="text-sm text-primary pl-4">E-mail</p>
 
-                  <input {...register('email')} className='w-full flex rounded-full text-sm h-8 md:h-10 p-2 px-6 outline-none bg-background shadow-sm shadow-slate-700 text-slate-500' />
+                  <input {...register('email')} className='w-full flex rounded-full text-sm h-8 md:h-10 p-2 px-6 outline-none bg-background shadow-sm shadow-slate-700 text-slate-500 border md:border-transparent' />
 
                   <div className="h-4">
                     {errors.email?.message && <p className="text-sky-400 text-sm">{errors.email.message}</p>}
@@ -121,10 +121,12 @@ const Contact = () => {
 
               <label className='flex flex-col gap-2'>
                 <p className='text-sm text-primary pl-4'>Mensagem</p>
-                <textarea {...register('textArea')} className='rounded-3xl text-slate-500 p-2 px-6 outline-none bg-background shadow-sm shadow-slate-700 w-full overflow-y-hidden h-8 text-sm md:h-16 md:max-h-32 resize-none' />
+                <textarea {...register('textArea')} className='rounded-3xl text-slate-500 p-2 px-6 outline-none bg-background shadow-sm shadow-slate-700 w-full overflow-y-hidden h-8 text-sm md:h-16 md:max-h-32 resize-none border md:border-transparent' />
+
                 <div className="h-4">
                   {errors.textArea?.message && <p className="text-sky-400 text-sm">{errors.textArea.message}</p>}
                 </div>
+                
               </label>
 
               <button
