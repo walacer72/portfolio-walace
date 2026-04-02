@@ -27,7 +27,7 @@ export const Aboult = () => {
 
             <div className="flex flex-col gap-8 justify-center items-center w-full max-w-6xl p-4 md:p-8 mx-4">
                 <motion.h1
-                    className="bg-gradient-to-r from-slate-950 to-sky-400 dark:from-sky-800 dark:to-sky-50 bg-clip-text text-4xl font-semibold text-transparent"
+                    className="bg-gradient-to-r from-slate-950 to-sky-400 dark:from-sky-800 dark:to-sky-50 bg-clip-text text-2xl font-semibold text-transparent"
                     ref={ref}
                     style={{ y, opacity }}
                     initial={{ opacity: 0, scale: 0.8 }}
@@ -35,7 +35,7 @@ export const Aboult = () => {
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true }}
                 >
-                    Minha evolução como desenvolvedor"
+                    Minha evolução como desenvolvedor
                 </motion.h1>
                 <div className="flex flex-col gap-4 p-4 md:p-8 bg-[rgba(0,0,0,0.1)] dark:bg-black rounded-3xl">
                     <p className="text-sm text-primary md:leading-relaxed">Desenvolvedor em transição de carreira com foco em desenvolvimento web, atualmente cursando Análise e Desenvolvimento de Sistemas.
