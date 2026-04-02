@@ -4,7 +4,7 @@
 import { Download } from "lucide-react";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
-import { personalProjects as personal, academicProjects as academic} from '../data'
+import { personalProjects as personal, academicProjects as academic } from '../data'
 import { Counter } from "./ui/Counter";
 
 
@@ -19,7 +19,7 @@ export const Aboult = () => {
 
     const y = useTransform(scrollYProgress, [0, 1], [30, 0]);
     const opacity = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
-    
+
 
     return (
         <div id='About' className="min-h-[calc(100vh-44px)] md:min-h-screen lg:min-h-screen w-screen flex justify-center items-center">
@@ -72,7 +72,7 @@ export const Aboult = () => {
                         <button className="bg-sky-700 rounded-full flex items-center gap-2 transition-all ease-in px-4 hover:-translate-y-2">
                             <a
                                 download
-                                href="/WALACE_DEOLIVEIRA_currículo.pdf">
+                                href="/FULLSTACK_JUNIOR_WALACE_DEOLIVEIRA_currículo.pdf">
                                 Curriculo
                             </a>
                             <Download size={15} />

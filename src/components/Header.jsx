@@ -17,7 +17,11 @@ const Header = () => {
                 transition={{ delay: 1, duration: 0.3 }}
                 viewport={{ once: true }}
             >
-                <div className="text-stone-800 font-semibold text-xl md:text-2xl lg:text-3xl hover:text-stone-700 transition-all duration-200 ease-in cursor-pointer md:w-56">Walace.</div>
+
+                <a href="#Home">
+                    <button className='text-stone-800 font-semibold text-xl md:text-2xl lg:text-3xl hover:text-stone-700 transition-all duration-200 ease-in cursor-pointer md:w-56'>Walace.</button>
+                </a>
+                
 
                 <div className='hidden md:block lg:block bg-zinc-200 dark:bg-[rgba(0,0,0,0.9)] dark:border text-slate-400 border-stone-950 rounded-full'>
                     <Menu />
