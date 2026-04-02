@@ -28,7 +28,7 @@ const Skills = () => {
         <div className="flex flex-col justify-center items-center gap-8 md:mt-0">
 
           <motion.h1
-            className='bg-gradient-to-r from-slate-950 to-sky-400 dark:from-sky-800 dark:to-sky-50 bg-clip-text text-4xl font-semibold text-transparent'
+            className='bg-gradient-to-r from-slate-950 to-sky-400 dark:from-sky-800 dark:to-sky-50 bg-clip-text text-3xl md:text-4xl font-semibold text-transparent'
             ref={ref1}
             style={{ y, opacity }}
           >
@@ -40,7 +40,7 @@ const Skills = () => {
 
           <h3 className='hidden md:flex text-sm text-primary-foreground text-center'>Possuo conhecimentos em desenvolvimento front-end, com experiência no uso de HTML, CSS, JavaScript e frameworks modernos como React e Tailwind CSS, aplicando boas práticas de codificação, performance e usabilidade.</h3>
 
-          <ul className="w-full grid md:hidden grid-cols-3 lg:grid-cols-4 gap-4 md:mt-4">
+          <ul className="w-full grid md:hidden grid-cols-2 lg:grid-cols-4 gap-4 md:mt-4">
 
             {Stacks.map((item, index) => (
               <motion.li
