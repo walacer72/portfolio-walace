@@ -27,7 +27,7 @@ export const Aboult = () => {
 
             <div className="flex flex-col gap-8 justify-center items-center w-full max-w-6xl p-4 md:p-8 mx-4">
                 <motion.h1
-                    className="bg-gradient-to-r from-slate-950 to-sky-400 dark:from-sky-800 dark:to-sky-50 bg-clip-text text-2xl font-semibold text-transparent"
+                    className="bg-gradient-to-r from-slate-950 to-sky-400 dark:from-sky-800 dark:to-sky-50 bg-clip-text text-xl md:text-2xl font-semibold text-transparent"
                     ref={ref}
                     style={{ y, opacity }}
                     initial={{ opacity: 0, scale: 0.8 }}

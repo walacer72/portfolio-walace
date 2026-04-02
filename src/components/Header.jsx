@@ -30,7 +30,7 @@ const Header = () => {
                         rel="noopener noreferrer"
                         className='cursor-pointer flex gap-4 items-center transition-all ease-in hover:-translate-y-1 bg-zinc-200 dark:bg-[rgba(0,0,0,0.9)] dark:border border-stone-950 rounded-full'
                     >
-                        <button className='bg-gradient-to-r from-slate-950 to-sky-400 dark:from-sky-800 dark:to-sky-50 bg-clip-text text-transparent text-center py-2 px-4 shadow-2xl dark:shadow-md text-sm md:text-base shadow-stone-800 rounded-full'>Entre em contato</button>
+                        <button className='bg-gradient-to-r from-slate-950 to-sky-400 dark:from-sky-800 dark:to-sky-50 bg-clip-text text-transparent text-center py-2 px-4 shadow-2xl dark:shadow-md text-xs font-semibold md:text-sm shadow-stone-800 rounded-full'>Entre em contato</button>
                     </a>
 
                     <ThemeToggle />
