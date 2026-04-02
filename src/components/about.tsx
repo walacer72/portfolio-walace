@@ -35,7 +35,7 @@ export const Aboult = () => {
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true }}
                 >
-                    Sobre mim
+                    Minha evolução como desenvolvedor"
                 </motion.h1>
                 <div className="flex flex-col gap-4 p-4 md:p-8 bg-[rgba(0,0,0,0.1)] dark:bg-black rounded-3xl">
                     <p className="text-sm text-primary md:leading-relaxed">Desenvolvedor em transição de carreira com foco em desenvolvimento web, atualmente cursando Análise e Desenvolvimento de Sistemas.
