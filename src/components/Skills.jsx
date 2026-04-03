@@ -40,12 +40,12 @@ const Skills = () => {
 
           <h3 className='hidden md:flex text-sm text-primary-foreground text-center'>Possuo conhecimentos em desenvolvimento front-end, com experiência no uso de HTML, CSS, JavaScript e frameworks modernos como React e Tailwind CSS, aplicando boas práticas de codificação, performance e usabilidade.</h3>
 
-          <ul className="w-full grid md:hidden grid-cols-2 lg:grid-cols-4 gap-4 md:mt-4">
+          <ul className="w-full grid md:hidden grid-cols-2 lg:grid-cols-4 gap-2 md:gap-4 md:mt-4">
 
             {Stacks.map((item, index) => (
               <motion.li
                 key={item.tec} // ✅ chave única
-                className="relative text-primary group px-2 transition-all duration-300 ease-in font-medium shadow-sm shadow-stone-700 rounded-full overflow-hidden border border-transparent hover:border-primary-foreground"
+                className="relative text-primary group py-1 px-2 transition-all duration-300 ease-in font-medium shadow-sm shadow-stone-700 rounded-full overflow-hidden border border-transparent hover:border-primary-foreground"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.2 }}
