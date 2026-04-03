@@ -15,13 +15,12 @@ const Skills = () => {
     offset: ["start end", "end start"],
   });
 
-
   const y = useTransform(scrollYProgress, [0, 1], [30, 0]);
   const opacity = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
 
   return (
-    <div id='Skills' className='w-screen flex items-center justify-center min-h-[calc(100vh-44px)] md:min-h-screen lg:min-h-screen md:mt-0 lg:mt-0 py-28 px-4 md:p-6 lg:p-10 '>
+    <section id='Skills' className='flex flex-col md:flex items-center justify-center min-h-[calc(100vh-44px)] md:min-h-screen lg:min-h-screen md:mt-0 lg:mt-0 py-28 px-4 md:p-6 lg:p-10'>
 
       <div className="h-full w-full max-w-7xl text-slate-400 flex flex-col items-center mt-8 justify-center md:gap-12 p-4 md:p-6 lg:p-10">
 
@@ -40,12 +39,12 @@ const Skills = () => {
 
           <h3 className='hidden md:flex text-sm text-primary-foreground text-center'>Possuo conhecimentos em desenvolvimento front-end, com experiência no uso de HTML, CSS, JavaScript e frameworks modernos como React e Tailwind CSS, aplicando boas práticas de codificação, performance e usabilidade.</h3>
 
-          <ul className="w-full grid md:hidden grid-cols-2 lg:grid-cols-4 gap-2 md:gap-4 md:mt-4">
+          <ul className="max-w-md grid md:hidden grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 md:mt-4">
 
             {Stacks.map((item, index) => (
               <motion.li
                 key={item.tec} // ✅ chave única
-                className="relative text-primary group py-1 px-2 transition-all duration-300 ease-in font-medium shadow-sm shadow-stone-700 rounded-full overflow-hidden border border-transparent hover:border-primary-foreground"
+                className="relative text-primary group px-2 transition-all duration-300 ease-in font-medium shadow-sm shadow-stone-700 rounded-full overflow-hidden border border-transparent hover:border-primary-foreground"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.2 }}
@@ -165,7 +164,7 @@ const Skills = () => {
 
       </div>
 
-    </div >
+    </section >
   )
 }
 
