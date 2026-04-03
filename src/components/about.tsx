@@ -46,7 +46,7 @@ export const Aboult = () => {
 
                     <p className="text-sm text-primary md:leading-relaxed">Também tenho conhecimentos em backend com Node.js, Express, Prisma e bancos de dados como MySQL e MongoDB, incluindo manipulação de arquivos e processamento de imagens com Multer e Sharp.</p>
                     <p className="text-sm text-primary md:leading-relaxed">Atuo há mais de 15 anos na área de atendimento ao cliente, sendo 12 anos em posições de liderança, o que me proporcionou habilidades sólidas em comunicação, resolução de problemas e trabalho em equipe — competências que aplico diretamente no desenvolvimento de software.</p>
-                    <p className="text-sm text-primary md:leading-relaxed">Busco minha primeira oportunidade na área de tecnologia para atuar em projetos reais, evoluir tecnicamente e contribuir com o time, unindo minha experiência profissional com o desenvolvimento de soluções web.</p>
+                    <p className="hidden md:flex text-sm text-primary md:leading-relaxed">Busco minha primeira oportunidade na área de tecnologia para atuar em projetos reais, evoluir tecnicamente e contribuir com o time, unindo minha experiência profissional com o desenvolvimento de soluções web.</p>
 
                     <div className="flex justify-between mt-2">
                         <div className="flex gap-2 md:gap-4 lg:gap-4 items-center ">
