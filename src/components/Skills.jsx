@@ -22,7 +22,7 @@ const Skills = () => {
   return (
     <section id='Skills' className='flex flex-col md:flex items-center justify-center min-h-[calc(100vh-44px)] md:min-h-screen lg:min-h-screen md:mt-0 lg:mt-0 px-4 md:p-6 lg:p-10'>
 
-      <div className="h-full w-full max-w-7xl text-slate-400 flex flex-col items-center mt-8 justify-center md:gap-12 p-4 md:p-6 lg:p-10">
+      <div className="h-full w-full max-w-7xl text-slate-400 flex flex-col items-center md:mt-8 justify-center md:gap-12 p-4 md:p-6 lg:p-10">
 
         <div className="flex flex-col justify-center items-center gap-8 md:mt-0">
 
@@ -34,12 +34,12 @@ const Skills = () => {
             Hard Skills
           </motion.h1>
 
-          <h3 className='md:hidden text-sm text-primary-foreground text-center'>Desenvolvo aplicações web full stack, com experiência em front-end utilizando HTML, CSS, JavaScript, React, TypeScript e Tailwind. No back-end, trabalho com Node.js e Express na criação de APIs, integração com bancos de dados (PostgreSQL e MongoDB) e uso de Prisma. Também utilizo GitHub, Zustand e faço manipulação de imagens com Multer e Sharp.</h3>
+          <h3 className='flex lg:hidden text-sm text-primary-foreground text-center'>Desenvolvo aplicações web full stack, com experiência em front-end utilizando HTML, CSS, JavaScript, React, TypeScript e Tailwind. No back-end, trabalho com Node.js e Express na criação de APIs, integração com bancos de dados (PostgreSQL e MongoDB) e uso de Prisma. Também utilizo GitHub, Zustand e faço manipulação de imagens com Multer e Sharp.</h3>
 
 
-          <h3 className='hidden md:flex text-sm text-primary-foreground text-center'>Possuo conhecimentos em desenvolvimento front-end, com experiência no uso de HTML, CSS, JavaScript e frameworks modernos como React e Tailwind CSS, aplicando boas práticas de codificação, performance e usabilidade.</h3>
+          <h3 className='hidden lg:flex text-sm text-primary-foreground text-center'>Possuo conhecimentos em desenvolvimento front-end, com experiência no uso de HTML, CSS, JavaScript e frameworks modernos como React e Tailwind CSS, aplicando boas práticas de codificação, performance e usabilidade.</h3>
 
-          <ul className="max-w-md grid md:hidden grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 md:mt-4">
+          <ul className="max-w-md grid lg:hidden grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 md:mt-4">
 
             {Stacks.map((item, index) => (
               <motion.li
@@ -81,7 +81,7 @@ const Skills = () => {
             ))}
           </ul>  
 
-          <ul className="hidden w-full md:grid grid-cols-2 lg:grid-cols-4 gap-4 md:mt-4">
+          <ul className="hidden w-full lg:grid lg:grid-cols-4 gap-4 md:mt-4">
 
             {Tecnologias.map((item, index) => (
               <motion.li
@@ -130,7 +130,7 @@ const Skills = () => {
         </div>
 
 
-        <div className="hidden md:flex w-full flex-col justify-center items-center gap-8">
+        <div className="hidden lg:flex w-full flex-col justify-center items-center gap-8">
 
           <motion.h1
             className='bg-gradient-to-r from-slate-950 to-sky-400 dark:from-sky-800 dark:to-sky-50 bg-clip-text text-4xl font-semibold text-transparent'
@@ -142,7 +142,7 @@ const Skills = () => {
 
           <h3 className='text-sm text-primary-foreground text-center'>Experiência em desenvolvimento back-end com Node.js e Express, criando APIs RESTful integradas a bancos de dados MySQL e MongoDB utilizando Prisma ORM. Implementação de upload e processamento de imagens com Multer e Sharp.</h3>
 
-          <ul className="w-full grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <ul className="hidden w-full lg:grid lg:grid-cols-4 gap-4">
             {Habilidades.map((item, index) => (
 
               <motion.li
