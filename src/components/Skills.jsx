@@ -20,9 +20,9 @@ const Skills = () => {
 
 
   return (
-    <section id='Skills' className='flex flex-col md:flex items-center justify-center min-h-[calc(100vh-44px)] md:min-h-screen lg:min-h-screen md:mt-0 lg:mt-0 px-4 md:p-6 lg:p-10'>
+    <section id='Skills' className='flex flex-col md:flex items-center justify-center min-h-[calc(100vh-44px)] md:min-h-screen lg:min-h-screen mt-0 px-4 md:p-6 lg:p-10'>
 
-      <div className="h-full w-full max-w-7xl text-slate-400 flex flex-col items-center md:mt-8 justify-center md:gap-12 p-4 md:p-6 lg:p-10">
+      <div className="h-full w-full max-w-7xl text-slate-400 flex flex-col items-center justify-center md:gap-12 p-4 md:p-6 lg:p-10">
 
         <div className="flex flex-col justify-center items-center gap-8 md:mt-0">
 

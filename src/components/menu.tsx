@@ -45,7 +45,7 @@ export const Menu = () => {
 
                 {lista.map((item, index) => (
 
-                    <li key={index} className='flex items-center cursor-pointer font-light transition-all duration-200 group sm:text-sm md:text-base xl:text-base'>
+                    <li key={index} className='flex items-center cursor-pointer font-light transition-all duration-200 group text-sm md:text-base xl:text-base'>
 
                         <a
 
