@@ -34,7 +34,7 @@ const Header = () => {
                         rel="noopener noreferrer"
                         className='cursor-pointer flex gap-4 items-center transition-all ease-in hover:-translate-y-1 bg-zinc-200 dark:bg-[rgba(0,0,0,0.9)] dark:border-stone-800 rounded-full border border-stone-200'
                     >
-                        <button className='text-center py-2 px-4 shadow-2xl dark:shadow-md text-xs text-primary md:text-sm shadow-stone-800 rounded-full'>Entre em contato</button>
+                        <button className='text-center py-2 px-4 shadow-2xl dark:shadow-md text-xs font-semibold dark:font-normal text-primary md:text-sm shadow-stone-800 rounded-full'>Entre em contato</button>
                     </a>
 
                     <ThemeToggle />
