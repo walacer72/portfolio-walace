@@ -15,7 +15,7 @@ const Home = () => {
             className="flex min-h-[calc(100vh-44px)] md:min-h-screen lg:min-h-screen w-full items-center justify-center bg-cover bg-center 
              bg-[url('/images/bgAuroraLight.jpg')] dark:bg-[url('/images/bgAuroraBlack.jpg')]"
         >
-            <div className="flex max-w-[350px] md:full flex-col items-center md:flex-row justify-center gap-8 p-5 text-center z-10">
+            <div className="flex max-w-[350px] md:max-w-4xl flex-col items-center md:flex-row justify-center gap-8 p-5 text-center z-10">
 
                 <motion.img
                     src="/images/InShot_20250702_225115347.png" alt="" className='w-[180px] h-[180px] sm:w-[300px]
