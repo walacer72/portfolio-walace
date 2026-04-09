@@ -1,6 +1,6 @@
 'use client'
 
-import { personalProjects, academicProjects } from '../data';
+import { personalProjects, academicProjects } from '../data/dataProject';
 import React, { useState } from 'react'
 import ProjectItem from './projectItem';
 import { useScroll, useTransform, motion } from "framer-motion";
@@ -10,7 +10,7 @@ type Tab = 'tab1' | 'tab2';
 
 const Project = () => {
 
-
+  // FRAMER MOTION
   const [tab, setTab] = useState<Tab>('tab1');
 
   const ref = useRef(null);

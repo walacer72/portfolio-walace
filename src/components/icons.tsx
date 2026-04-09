@@ -1,6 +1,46 @@
 import { BiLogoGithub, BiLogoInstagram, BiLogoLinkedin } from 'react-icons/bi'
+export type IconName = keyof typeof icons;
+
+import {
+    SiHtml5,
+    SiCss3,
+    SiJavascript,
+    SiReact,
+    SiTypescript,
+    SiTailwindcss,
+    SiGithub,
+    SiFramer,
+    SiExpress,
+    SiPrisma,
+    SiMongodb,
+    SiPostgresql,
+    SiRadixui,
+    SiFirebase 
+} from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
+
+export const icons = {
+    react: <SiReact />,
+    next: <RiNextjsFill />,
+    shadcnUi: <SiRadixui />,
+    tailwindCSS: < SiTailwindcss />,
+    typescript: <SiTypescript />,
+    html: <SiHtml5 />,
+    css: < SiCss3 />,
+    javascript: <SiJavascript />,
+    firebase: < SiFirebase />,
+    framerMotion: <SiFramer />,
+    github: <SiGithub />,
+    node: <FaNodeJs />,
+    express: <SiExpress />,
+    prisma: <SiPrisma />,
+    mongoDB: <SiMongodb />,
+    postgreSQL: <SiPostgresql />,
+}
 
 export const Icons = () => {
+
     return (
         <div className="flex gap-3">
             <a

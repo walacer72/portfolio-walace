@@ -1,40 +1,41 @@
 'use client'
 
-import { Habilidades, Tecnologias, Stacks } from "../data";
+import { Habilidades, Tecnologias, Stacks } from "../data/dataSkills";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
+import { icons } from "./icons";
 
 
 const Skills = () => {
 
-  const ref1 = useRef(null);
-  const ref2 = useRef(null);
+  // FRAMER MOTION
+  const ref = useRef(null);
 
   const { scrollYProgress } = useScroll({
-    target: ref1, ref2,
+    target: ref,
     offset: ["start end", "end start"],
   });
 
   const y = useTransform(scrollYProgress, [0, 1], [30, 0]);
   const opacity = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
-
+  
   return (
     <section id='Skills' className='flex flex-col md:flex items-center justify-center min-h-[calc(100vh-44px)] md:min-h-screen lg:min-h-screen mt-0 px-4 md:p-6 lg:p-10'>
 
-      <div className="h-full w-full max-w-7xl text-slate-400 flex flex-col items-center justify-center md:gap-12 p-4 md:p-6 lg:p-10">
+      <div className="h-full max-w-[350px] md:w-full lg:max-w-7xl text-slate-400 flex flex-col items-center justify-center md:gap-12 p-4 md:p-6 lg:p-10">
 
         <div className="flex flex-col justify-center items-center gap-8 md:mt-0">
 
           <motion.h1
             className='bg-gradient-to-r from-slate-950 to-sky-400 dark:from-sky-800 dark:to-sky-50 bg-clip-text text-3xl md:text-4xl font-semibold text-transparent'
-            ref={ref1}
+            ref={ref}
             style={{ y, opacity }}
           >
             Hard Skills
           </motion.h1>
 
-          <h3 className='flex lg:hidden text-sm text-primary-foreground text-center'>Desenvolvo aplicações web full stack, com experiência em front-end utilizando HTML, CSS, JavaScript, React, TypeScript e Tailwind. No back-end, trabalho com Node.js e Express na criação de APIs, integração com bancos de dados (PostgreSQL e MongoDB) e uso de Prisma. Também utilizo GitHub, Zustand e faço manipulação de imagens com Multer e Sharp.</h3>
+          <h3 className='flex lg:hidden text-sm text-primary-foreground text-center'>Desenvolvo aplicações web full stack, no front utilizo HTML, CSS, JavaScript, React, TypeScript e Tailwind. No back-end, trabalho com Node e Express na criação de APIs, integração com bancos de dados (PostgreSQL e MongoDB) com Prisma. Também utilizo GitHub, Zustand e faço manipulação de imagens com Multer e Sharp.</h3>
 
 
           <h3 className='hidden lg:flex text-sm text-primary-foreground text-center'>Possuo conhecimentos em desenvolvimento front-end, com experiência no uso de HTML, CSS, JavaScript e frameworks modernos como React e Tailwind CSS, aplicando boas práticas de codificação, performance e usabilidade.</h3>
@@ -55,7 +56,7 @@ const Skills = () => {
 
                   <div className="flex items-center justify-center">
                     <div className="w-10 h-10 flex justify-center items-center text-2xl text-sky-800">
-                      {item.image}
+                      {icons[item.tec]}
                     </div>
                     <div className="text-sm">{item.tec}</div>
                   </div>
@@ -99,7 +100,7 @@ const Skills = () => {
 
                   <div className="flex items-center justify-center">
                     <div className="w-10 h-10 flex justify-center items-center text-2xl text-sky-800">
-                      {item.image}
+                      {icons[item.tec]}
                     </div>
                     <div>{item.tec}</div>
                   </div>
@@ -134,7 +135,7 @@ const Skills = () => {
 
           <motion.h1
             className='bg-gradient-to-r from-slate-950 to-sky-400 dark:from-sky-800 dark:to-sky-50 bg-clip-text text-4xl font-semibold text-transparent'
-            ref={ref2}
+            ref={ref}
             style={{ y, opacity }}
           >
             Back End

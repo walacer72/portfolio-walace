@@ -1,9 +1,8 @@
 'use client'
 
-import React from 'react'
 import { Menu } from './menu';
 import { Icons } from './icons';
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Home = () => {
 
@@ -14,20 +13,23 @@ const Home = () => {
             style={{ marginBottom: "100px" }}
             id='Home'
             className="flex min-h-[calc(100vh-44px)] md:min-h-screen lg:min-h-screen w-full items-center justify-center bg-cover bg-center 
-             bg-[url('/bgAuroraLight.jpg')] dark:bg-[url('/bgAuroraBlack.jpg')]"
+             bg-[url('/images/bgAuroraLight.jpg')] dark:bg-[url('/images/bgAuroraBlack.jpg')]"
         >
-            <div className="flex flex-col items-center md:flex-row justify-center gap-8 p-5 text-center z-10">
+            <div className="flex max-w-[350px] md:full flex-col items-center md:flex-row justify-center gap-8 p-5 text-center z-10">
 
                 <motion.img
-                    src="/InShot_20250702_225115347.png" alt="" className='w-[180px] h-[180px] sm:w-[300px]
+                    src="/images/InShot_20250702_225115347.png" alt="" className='w-[180px] h-[180px] sm:w-[300px]
                  sm:h-[300px] object-cover rounded-full bg-gradient-to-r from-black to-stone-800 shadow-2xl shadow-stone-700 dark:shadow-stone-950'
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true }}
+                    width={400}
+                    height={400}
+
                 />
 
-                <aside className='flex flex-col items-center gap-4'>
+                <aside className=' flex flex-col items-center gap-4'>
                     <div className="flex flex-col items-center justify-center space-y-1 sm:space-y-3">
 
 
@@ -59,13 +61,13 @@ const Home = () => {
                             Full stack Developer
                         </motion.h3>
 
-                        
+
 
                         <motion.p
                             className='max-w-[300px] text-sm text-primary-foreground pt-2 md:pt-0'
                             initial="hidden"
                             whileInView="visible"
-                            transition={{delay: 1}}
+                            transition={{ delay: 1 }}
                             viewport={{ once: true }}
                             variants={{
                                 visible: {

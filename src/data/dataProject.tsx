@@ -1,142 +1,50 @@
-// ICONS SKILLS
-
-import React from 'react'
-import {
-    SiHtml5,
-    SiCss3,
-    SiJavascript,
-    SiReact,
-    SiTypescript,
-    SiTailwindcss,
-    SiGithub,
-    SiShadcnui,
-    SiFirebase,
-    SiFramer,
-    SiExpress,
-    SiPrisma,
-    SiMongodb,
-    SiPostgresql 
-} from "react-icons/si";
-import { FaNodeJs } from "react-icons/fa";
-import { RiNextjsFill } from "react-icons/ri";
-
-// IMAGES PROJECTS
-
-import devMemoryPc from '../public/pc/jogoDaMemoria.jpg'
-import mariaDocesPc from '../public/pc/mariaDoces.jpg'
-import mariaDocesSmart from "../public/smartphone/mariaDoces.jpeg"
-import planAheadPc from "../public/pc/planAhead.jpg"
-import planAheadSmart from "../public/smartphone/planAhead.jpeg"
-import tmakiZapPc from "../public/pc/tmakiZap.jpg"
-import tmakiZapSmart from "../public/smartphone/tmakiZap.jpeg"
-import whatsAppClone from "../public/pc/whatsAppClone.jpg"
-import pizzaria from "../public/pc/pizzaria.jpg"
-import quizDev from "../public/pc/quizDev.jpg"
-import urnaEletronica from "../public/pc/urnaEletronica.jpg"
-import calculadoraIMC from "../public/pc/calculadoraIMC.jpg"
-import devMemorySmart from "../public/smartphone/devMemory.jpg"
-import fynanSysPc from "../public/pc/finanSys.jpg";
-import { Project } from './projectType';
-
-export const Stacks = [
-    { image: <SiHtml5 size={15} />, tec: 'Html5', pct: 100 },
-    { image: <SiCss3 size={15} />, tec: 'Css3', pct: 100 },
-    { image: <SiJavascript size={15} />, tec: 'Javascript', pct: 100 },
-    { image: <SiReact size={15} />, tec: 'React', pct: 70 },
-    { image: <SiTypescript size={15} />, tec: 'Typescript', pct: 100 },
-    { image: <SiTailwindcss size={15} />, tec: 'Tailwind', pct: 100 },
-    { image: <SiFramer size={15} />, tec: 'Framer Motion', pct: 70 },
-    { image: <SiGithub size={15} />, tec: 'Github', pct: 50 },
-    { image: <FaNodeJs size={15} />, tec: 'Node', pct: 50 },
-    { image: <SiExpress size={15} />, tec: 'Express', pct: 50 },
-    { image: <SiPrisma size={15} />, tec: 'Prisma', pct: 50 },
-    { image: <SiMongodb size={15} />, tec: 'MongoDB', pct: 50 },
-    { image: <SiPostgresql size={15} />, tec: 'PostgreSQL', pct: 70 },
-    
-]
-
-export const Tecnologias = [
-    { image: <SiHtml5 />, tec: 'Html5', pct: 100 },
-    { image: <SiCss3 />, tec: 'Css3', pct: 100 },
-    { image: <SiJavascript />, tec: 'Javascript', pct: 100 },
-    { image: <SiReact />, tec: 'React', pct: 70 },
-    { image: <SiTypescript />, tec: 'Typescript', pct: 100 },
-    { image: <SiTailwindcss />, tec: 'Tailwind', pct: 100 },
-    { image: <SiFramer size={25} />, tec: 'Framer Motion', pct: 70 },
-    { image: <SiGithub />, tec: 'Github', pct: 50 }
-]
-
-
-export const Habilidades = ['Node.js', 'Express', 'Prisma', 'MySQL', 'MongoDB', 'Postgree', 'Criação de API', 'Multer e Sharp']
+import { Project } from "@/projectType"
 
 
 export const personalProjects: Project[] = [
     {
         demo: 'https://finansys-teal.vercel.app/',
         github: 'https://github.com/walacer72/finansys',
-        pc: fynanSysPc,
+        pc: '/pc/finanSys.jpg',
         smart: '',
         name: 'FinanSys',
         description: 'Finansys é um aplicativo web para controle financeiro pessoal, desenvolvido com o objetivo de praticar Next.js, Context API, TypeScript e Tailwind CSS. Com ele, o usuário pode registrar entradas, saídas e acompanhar o saldo total, tudo de forma simples e intuitiva.',
         tecnologias: 'Reactjs, Nextjs, Typescript, Shadcn-ui e Tailwindcss',
-        tec: [
-            <SiReact size={18} />,
-            <RiNextjsFill size={22} />,
-            <SiShadcnui />,
-            <SiTailwindcss />,
-            <SiTypescript />
-        ]
-
+        tec: [ 'react', 'next', 'shadcnUi', 'tailwindCSS', 'typescript' ]
     },
     {
         demo: 'https://walacer72.github.io/Maria-Doces',
         github: 'https://github.com/walacer72/Maria-Doces',
-        pc: mariaDocesPc,
-        smart: mariaDocesSmart,
+        pc: '/pc/mariaDoces.jpg',
+        smart: '/smart/mariaDoces.jpeg',
         name: 'Maria doces',
         description: 'Criação própria, do design ao código. Desenvolvi um site responsivo e moderno para a confeitaria Maria Doces, com foco na divulgação dos produtos artesanais e no contato fácil via WhatsApp para pedidos e orçamentos. O site apresenta bolos e doces com imagens e descrições, pensado especialmente para encomendas personalizadas.',
         tecnologias: 'Html5, Css3, Javascript, Api formsubmit e biblioteca AOS pra animação de scroll',
-        tec: [
-            <SiHtml5 />,
-            <SiCss3 />,
-            <SiJavascript />
-        ]
-
+        tec: [ 'html', 'css', 'javascript' ]
+        
     },
 
     {
         demo: 'https://plan-ahead-o5ha.vercel.app/',
         github: 'https://github.com/walacer72/Plan-Ahead',
-        pc: planAheadPc,
-        smart: planAheadSmart,
+        pc: '/pc/planAhead.jpg',
+        smart: '/smart/planAhead.jpeg',
         name: 'Plan Ahead',
         description: 'Desenvolvimento próprio com foco em aprendizado, criatividade e usabilidade. Um aplicativo para organizar e gerenciar atividades do dia a dia de forma prática e eficiente. Ele ajuda as pessoas a não esquecerem compromissos, listar tarefas, fazer listas de compras e ainda manter um controle financeiro simples e acessível.',
         tecnologias: 'Reactjs, Nextjs, Typescript, Shadcn-ui e Tailwindcss',
-        tec: [
-            <SiReact size={18} />,
-            <RiNextjsFill size={22} />,
-            <SiShadcnui />,
-            <SiTailwindcss />,
-            <SiTypescript />
-        ]
+        tec: [ 'react', 'next', 'shadcnUi', 'tailwindCSS', 'typescript' ]
 
     },
 
     {
         demo: 'https://tmakiclub-zap.vercel.app/',
         github: 'https://github.com/walacer72/TmakiClub-Zap',
-        pc: tmakiZapPc,
-        smart: tmakiZapSmart,
+        pc: '/pc/tmakiZap.jpg',
+        smart: '/smart/tmakiZap.jpeg',
         name: 'Tmakiclub Zap',
         description: 'Desenvolvi um sistema de pedidos online integrado ao WhatsApp, voltado para pequenos comércios. O cliente acessa um catálogo digital com produtos, imagens, preços e descrições, seleciona os itens desejados e, ao final, o sistema gera automaticamente uma mensagem com os detalhes do pedido, pronta para ser enviada ao WhatsApp da loja com um clique.',
         tecnologias: 'Reactjs, Nextjs, Typescript, Shadcn-ui, Tailwindcss e bibliotecas: zustand, zod, i18next e Api viacep',
-        tec: [
-            <SiReact size={18} />,
-            <RiNextjsFill size={22} />,
-            <SiShadcnui />,
-            <SiTailwindcss />,
-            <SiTypescript />
-        ]
+        tec: [ 'react', 'next', 'shadcnUi', 'tailwindCSS', 'typescript' ]
 
 
     }
@@ -147,87 +55,63 @@ export const academicProjects: Project[] = [
     {
         demo: 'https://whats-appdev-chi.vercel.app/',
         github: 'https://github.com/walacer72/WhatsApp-Clone',
-        pc: whatsAppClone,
+        pc: '/pc/whatsAppClone.jpg',
         smart: '',
         name: 'WhatsApp-Clone',
         description: 'Projeto em aula de um clone do WhatsApp desenvolvido com React.js, CSS e Material UI, integrando funcionalidades de envio de mensagens em tempo real e autenticação de usuários. O Firebase foi utilizado como backend (BaaS), permitindo armazenamento de dados e sincronização instantânea.',
         tecnologias: 'Reactjs, css, biblioteca material UI e (BaaS) firebase',
-        tec: [
-            <SiReact size={18} />,
-            <SiCss3 />,
-            <SiFirebase size={16} />
-        ]
+        tec: [ 'react', 'css', 'firebase' ]
+            
     },
     {
         demo: 'https://calculadora-imc-gilt-phi.vercel.app/',
         github: 'https://github.com/walacer72/calculadora-IMC',
-        pc: calculadoraIMC,
+        pc: '/pc/calculadoraIMC.jpg',
         smart: '',
         name: 'Calculadora de IMC',
         description: 'Este projeto foi desenvolvido em aula como prática de ReactJS, consistindo em uma aplicação que calcula o Índice de Massa Corporal (IMC) a partir dos dados de peso e altura informados pelo usuário. O resultado é exibido junto à classificação correspondente (abaixo do peso, peso ideal, sobrepeso, obesidade, etc).',
         tecnologias: 'Reactjs, Nextjs, typescript e tailwindCSS.',
-        tec: [
-            <SiReact size={18} />,
-            <RiNextjsFill size={22} />,
-            <SiTailwindcss />,
-            <SiTypescript />
-        ]
+        tec: [ 'react', 'next', 'tailwindCSS', 'typescript' ]
     },
     {
         demo: 'https://jogo-da-memoria-rose-three.vercel.app/',
         github: 'https://github.com/walacer72/Jogo-da-Memoria',
-        pc: devMemoryPc,
-        smart: devMemorySmart,
+        pc: '/pc/jogoDaMemoria.jpg',
+        smart: '/smart/devMemory.jpg',
         name: 'DevMemory',
         description: 'Este projeto foi desenvolvido em aula como prática de ReactJS, com foco em lógica de programação, manipulação de estado e interatividade. O jogo desafia o usuário a encontrar pares de cartas iguais, estimulando memória e concentração. Além da prática com componentes e hooks, o projeto também explora responsividade e uma interface leve e intuitiva.',
         tecnologias: 'Reactjs, typescript e styled-components',
-        tec: [
-            <SiReact size={18} />,
-            <SiTypescript />
-
-        ]
+        tec: [ 'react', 'typescript' ]
     },
     {
         demo: 'https://walacer72.github.io/pizzaria/',
         github: 'https://github.com/walacer72/pizzaria',
-        pc: pizzaria,
+        pc: '/pc/pizzaria.jpg',
         smart: '',
         name: 'Pizza',
         description: 'Projeto simples desenvolvido em JavaScript puro, simulando um sistema de pedidos online. O usuário pode escolher tamanhos de pizza, definir quantidades e adicionar os itens ao carrinho de compras. O foco foi praticar manipulação do DOM, lógica de programação e atualização dinâmica da interface, resultando em uma aplicação interativa e intuitiva.',
         tecnologias: 'Javascript, html e css',
-        tec: [
-            <SiHtml5 />,
-            <SiCss3 />,
-            <SiJavascript />
-        ]
+        tec: [ 'html', 'css', 'javascript' ]
     },
     {
         demo: 'https://walacer72.github.io/Urna-Eletronica/',
         github: 'https://github.com/walacer72/Urna-Eletronica',
-        pc: urnaEletronica,
+        pc: '/pc/urnaEletronica.jpg',
         smart: '',
         name: 'Urna Eletronica',
         description: 'Projeto simples desenvolvido em JavaScript puro, simulando o funcionamento de uma urna eletrônica. O usuário pode digitar números de candidatos, confirmar, corrigir ou votar em branco. Ao confirmar o voto aparece o candidato votado. O foco foi praticar manipulação do DOM, estrutura de dados e lógica de programação.',
         tecnologias: 'Javascript, html e css',
-        tec: [
-            <SiHtml5 />,
-            <SiCss3 />,
-            <SiJavascript />
-        ]
+        tec: [ 'html', 'css', 'javascript' ]
     },
     {
         demo: 'https://walacer72.github.io/quizDev/',
         github: 'https://github.com/walacer72/quizDev',
-        pc: quizDev,
+        pc: '/pc/quizDev.jpg',
         smart: '',
         name: 'QuizDev',
         description: 'Projeto desenvolvido em JavaScript puro, simulando um jogo de perguntas e respostas. O usuário escolhe entre alternativas, recebe o feedback de acertos e erros e, ao final, pode visualizar sua pontuação. O objetivo foi praticar manipulação do DOM, controle de estados e lógica condicional, resultando em uma aplicação interativa, simples e divertida.',
         tecnologias: 'Javascript, html e css',
-        tec: [
-            <SiHtml5 />,
-            <SiCss3 />,
-            <SiJavascript />
-        ]
+        tec: [ 'html', 'css', 'javascript' ]
     }
 
 ]

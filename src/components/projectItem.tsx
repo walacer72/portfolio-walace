@@ -1,9 +1,11 @@
 'use client'
 
-import { Project } from "../projectType";
 import Image from "next/image";
 import { useState } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
+import { Project } from "@/projectType";
+import { icons } from "./icons";
+
 
 type Props = {
     item: Project;
@@ -13,6 +15,7 @@ type Props = {
 const ProjectItem = ({ item, index }: Props) => {
 
     const [descriptShow, setDescriptShow] = useState(false);
+
 
     return (
 
@@ -32,26 +35,39 @@ const ProjectItem = ({ item, index }: Props) => {
                     <div className="flex justify-between items-center pb-4">
                         <h3 className='font-semibold text-base md:text-lg'>{item.name}</h3>
                         <div className="flex justify-center items-center gap-2 md:gap-4 text-card">
-                            {item.tec.map((item, index) => (
-                                <div key={index} className="">{item}</div>
-                            ))}
+                            {item.tec.map((tech) => (
+                                <div key={tech}>{icons[tech]}</div>
+                            ))};
                         </div>
                     </div>
 
-                    {item.pc &&
-                        <Image className='hidden md:block lg:block rounded-lg object-cover w-full border-4 border-zinc-300 dark:border-none' src={item.pc} alt={item.name} />
-                    }
+                    {item.pc && (
+                        <Image
+                            src={item.pc}
+                            alt={item.name}
+                            width={400}
+                            height={250}
+                            className="hidden md:block w-full h-auto rounded-lg object-cover border-4 border-zinc-300 dark:border-none"
+                        />
+                    )}
 
 
                     {item.smart ? (
                         <Image
-                            className={`w-full md:hidden lg:hidden rounded-lg border-4 border-zinc-300 dark:border-none`}
-                            src={item.smart} alt={item.name}
+                            src={item.smart}
+                            alt={item.name}
+                            width={300}
+                            height={300}
+                            className="md:hidden w-full h-auto rounded-lg border-4 border-zinc-300 dark:border-none"
                         />
                     ) : item.pc ? (
                         <Image
-                            className='md:hidden lg:hidden rounded-lg object-cover w-full border-4 border-zinc-300 dark:border-none'
-                            src={item.pc} alt={item.name} />
+                            src={item.pc}
+                            alt={item.name}
+                            width={400}
+                            height={250}
+                            className="md:hidden w-full h-auto rounded-lg object-cover border-4 border-zinc-300 dark:border-none"
+                        />
                     ) : null}
 
 

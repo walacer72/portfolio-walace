@@ -1,5 +1,8 @@
 import { StaticImageData } from 'next/image';
 import { ReactElement } from 'react';
+import { IconName } from './components/icons';
+
+type Tec = 'html'|'css'|'javascript'|'react'|'next'|'shadcnUi'|'tailwindCSS'|'typescript'|'firebase';
 
 export type Project = {
   demo: string;
@@ -9,5 +12,10 @@ export type Project = {
   name: string;
   description: string;
   tecnologias: string;
-  tec: ReactElement[];
+  tec: Tec[];
 };
+
+export type ProjectSkills = {
+  tec: IconName;
+  pct: number;
+}

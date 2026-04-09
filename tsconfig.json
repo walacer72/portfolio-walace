@@ -37,7 +37,7 @@
     "src/components/Project.tsx",
     "src/components/footer.jsx",
     ".next/dev/types/**/*.ts"
-  ],
+, "src/components/icons.tsx"  ],
   "exclude": [
     "node_modules"
   ]

@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { Menu } from './menu';
-import { ThemeToggle } from './toogleTheme';
+import { ThemeToggle } from '../components/ui/toogleTheme';
 import { motion } from "framer-motion";
 
 const Header = () => {
