@@ -27,7 +27,7 @@ const Project = () => {
   return (
 
     <section id='Projects' className='min-h-[calc(100vh-44px)] md:min-h-screen lg:min-h-screen w-full flex justify-center items-center'>
-      <div className="max-w-[350px] h-full md:max-w-6xl flex flex-col items-center justify-center gap-2 p-4 mt-28 md:p-0">
+      <div className="h-full max-w-6xl flex flex-col items-center justify-center gap-2 p-4 mt-28 md:p-0">
 
         <motion.h1
           className='bg-gradient-to-r from-slate-950 to-sky-400 dark:from-sky-800 dark:to-sky-50 bg-clip-text font-semibold text-transparent text-4xl'
@@ -64,7 +64,7 @@ const Project = () => {
             ${tab === 'tab1' ? 'opacity-100 translate-y-0 h-auto' : 'opacity-0 -translate-y-4 h-0 overflow-hidden'}
             `}>
 
-            <p className='text-sm text-primary-foreground max-w-5xl text-center mx-auto px-2'>
+            <p className='text-sm text-primary-foreground max-w-[350px] md:max-w-4xl text-center mx-auto px-2'>
               Conheça alguns dos meus projetos pessoais desenvolvidos fora do ambiente acadêmico, aplicando tecnologias como React, Next.js, Tailwind CSS, HTML, CSS, JavaScript, shadcn-ui e consumo de APIs.
             </p>
 
@@ -81,7 +81,7 @@ const Project = () => {
             ${tab === 'tab2' ? 'opacity-100 translate-y-0 h-auto' : 'opacity-0 -translate-y-4 h-0 overflow-hidden'}
             `}>
 
-            <p className='text-sm text-primary-foreground max-w-4xl text-center mx-auto px-2'>
+            <p className='text-sm text-primary-foreground max-w-[350px] md:max-w-4xl text-center mx-auto px-2'>
               Confira alguns dos projetos que desenvolvi ao longo da minha jornada como estudante de desenvolvimento web — cada um foi passo importante na construção do meu conhecimento!
             </p>
 
