@@ -41,7 +41,7 @@ export const Menu = () => {
 
     return (
         <>
-            <ul className='md:hidden lg:hidden py-2 px-8 rounded-full flex w-full gap-8 justify-evenly items-center text-primary'>
+            <ul className='lg:hidden py-2 px-8 rounded-full flex w-full gap-8 justify-evenly items-center text-primary'>
 
                 {lista.map((item, index) => (
 
@@ -63,7 +63,7 @@ export const Menu = () => {
                 ))}
 
             </ul>
-            <ul className='hidden md:flex py-2 px-8 rounded-full w-full gap-8 justify-between items-center text-primary'>
+            <ul className='hidden lg:flex py-2 px-8 rounded-full w-full gap-8 justify-between items-center text-primary'>
                 <BiCodeAlt className='text-sky-700 text-2xl' />
                 {lista.map((item, index) => (
 

@@ -23,7 +23,7 @@ const Skills = () => {
   return (
     <section id='Skills' className='flex flex-col md:flex items-center justify-center min-h-[calc(100vh-44px)] md:min-h-screen lg:min-h-screen mt-0 px-4 md:p-6 lg:p-10'>
 
-      <div className="h-full max-w-[350px] md:w-full lg:max-w-7xl text-slate-400 flex flex-col items-center justify-center md:gap-12 p-4 md:p-6 lg:p-10">
+      <div className="max-w-[350px] w-full sm:max-w-6xl lg:max-w-7xl text-slate-400 flex flex-col items-center justify-center md:gap-12 p-4 md:p-6 lg:p-10">
 
         <div className="flex flex-col justify-center items-center gap-8 md:mt-0">
 
@@ -40,7 +40,7 @@ const Skills = () => {
 
           <h3 className='hidden lg:flex text-sm text-primary-foreground text-center'>Possuo conhecimentos em desenvolvimento front-end, com experiência no uso de HTML, CSS, JavaScript e frameworks modernos como React e Tailwind CSS, aplicando boas práticas de codificação, performance e usabilidade.</h3>
 
-          <ul className="max-w-md grid lg:hidden grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 md:mt-4">
+          <ul className="w-full grid lg:hidden grid-cols-2 sm:grid-cols-3 gap-3 md:gap-4 md:mt-4">
 
             {Stacks.map((item, index) => (
               <motion.li

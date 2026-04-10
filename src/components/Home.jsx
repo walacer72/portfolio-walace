@@ -18,8 +18,7 @@ const Home = () => {
             <div className="flex max-w-[350px] md:max-w-4xl flex-col items-center md:flex-row justify-center gap-8 p-5 text-center z-10">
 
                 <motion.img
-                    src="/images/InShot_20250702_225115347.png" alt="" className='w-[180px] h-[180px] sm:w-[300px]
-                 sm:h-[300px] object-cover rounded-full bg-gradient-to-r from-black to-stone-800 shadow-2xl shadow-stone-700 dark:shadow-stone-950'
+                    src="/images/InShot_20250702_225115347.png" alt="" className='w-[180px] h-[180px] sm:w-[240px] sm:h-[240px] md:w-[300px] md:h-[300px] object-cover rounded-full bg-gradient-to-r from-black to-stone-800 shadow-2xl shadow-stone-700 dark:shadow-stone-950'
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5 }}
@@ -102,7 +101,7 @@ const Home = () => {
 
                 </aside>
 
-                <div className="flex md:hidden lg:hidden fixed bottom-0 left-0 right-0 h-11 justify-center items-center border-t bg-zinc-200 dark:bg-black z-40">
+                <div className="flex lg:hidden fixed bottom-0 left-0 right-0 h-11 justify-center items-center border-t bg-zinc-200 dark:bg-black z-40">
                     <Menu />
                 </div>
 

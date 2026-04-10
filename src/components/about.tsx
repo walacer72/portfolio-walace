@@ -3,13 +3,14 @@
 
 import { Download } from "lucide-react";
 import { useScroll, useTransform, motion } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { personalProjects as personal, academicProjects as academic } from '../data/dataProject'
 import { Counter } from "./ui/Counter";
 
 
 export const Aboult = () => {
 
+    const [show, setShow] = useState(false);
     const ref = useRef(null);
 
     const { scrollYProgress } = useScroll({
@@ -25,7 +26,7 @@ export const Aboult = () => {
         <div id='About' className="min-h-[calc(100vh-44px)] md:min-h-screen lg:min-h-screen w-screen flex justify-center items-center">
 
 
-            <div className="flex flex-col gap-8 justify-center items-center w-full max-w-[350px] md:max-w-6xl p-4 md:p-8 mx-4">
+            <div className="flex flex-col gap-8 justify-center items-center w-full max-w-[350px] sm:max-w-6xl p-4 md:p-8 mx-4">
                 <motion.h1
                     className="bg-gradient-to-r from-slate-950 to-sky-400 dark:from-sky-800 dark:to-sky-50 bg-clip-text text-lg md:text-2xl font-semibold text-transparent"
                     ref={ref}
@@ -39,14 +40,25 @@ export const Aboult = () => {
                 </motion.h1>
 
                 <div className="flex flex-col gap-2 p-4 md:p-8 bg-[rgba(0,0,0,0.1)] dark:bg-black rounded-3xl border md:border-transparent">
-                    <p className="text-sm text-primary md:leading-relaxed">Desenvolvedor em transição de carreira com foco em desenvolvimento web, atualmente cursando Análise e Desenvolvimento de Sistemas.
-                        Possuo experiência em frontend, desenvolvendo interfaces responsivas com abordagem mobile first utilizando React, TypeScript, JavaScript, HTML e CSS, além de integração com APIs REST.
+                    <p className="text-sm text-primary md:leading-relaxed">Desenvolvedor em transição de carreira com foco em desenvolvimento web, atualmente cursando Análise e Desenvolvimento de Sistemas. Possuo experiência em frontend, desenvolvendo interfaces responsivas com abordagem mobile first utilizando React, TypeScript, JavaScript, HTML e CSS, além de integração com APIs REST.</p>
 
+                    <p className="text-sm text-primary md:leading-relaxed">Também tenho conhecimentos em backend com Node.js, Express, Prisma e bancos de dados como MySQL e MongoDB, incluindo manipulação de arquivos e processamento de imagens com Multer e Sharp...
+                        <span
+                            onClick={() => setShow(!show)}
+                            className="md:hidden hover:underline cursor-pointer opacity-70">
+                              Ver mais
+                        </span>
                     </p>
 
-                    <p className="text-sm text-primary md:leading-relaxed">Também tenho conhecimentos em backend com Node.js, Express, Prisma e bancos de dados como MySQL e MongoDB, incluindo manipulação de arquivos e processamento de imagens com Multer e Sharp.</p>
-                    <p className="text-sm text-primary md:leading-relaxed">Atuo há mais de 15 anos na área de atendimento ao cliente, sendo 12 anos em posições de liderança, o que me proporcionou habilidades sólidas em comunicação, resolução de problemas e trabalho em equipe — competências que aplico diretamente no desenvolvimento de software.</p>
-                    <p className="hidden md:flex text-sm text-primary md:leading-relaxed">Busco minha primeira oportunidade na área de tecnologia para atuar em projetos reais, evoluir tecnicamente e contribuir com o time, unindo minha experiência profissional com o desenvolvimento de soluções web.</p>
+                    <div className={`${show ? 'max-h-64 opacity-100 mt-2' : 'max-h-0 opacity-0'} overflow-hidden transition-all duration-500 ease-in-out sm:max-h-none sm:opacity-100 flex flex-col gap-4
+                    text-sm text-primary md:leading-relaxedf`}
+                    >
+                        <p className={`text-sm text-primary md:leading-relaxedf`}>Atuo há mais de 15 anos na área de atendimento ao cliente, sendo 12 anos em posições de liderança, o que me proporcionou habilidades sólidas em comunicação, resolução de problemas e trabalho em equipe — competências que aplico diretamente no desenvolvimento de software.
+                        </p>
+
+                        <p className={`text-sm text-primary md:leading-relaxedf`}>Busco minha primeira oportunidade na área de tecnologia para atuar em projetos reais, evoluir tecnicamente e contribuir com o time, unindo minha experiência profissional com o desenvolvimento de soluções web.</p>
+                    </div>
+
 
                     <div className="flex justify-between mt-2">
                         <div className="flex gap-2 md:gap-4 lg:gap-4 items-center ">

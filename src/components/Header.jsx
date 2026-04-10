@@ -8,10 +8,10 @@ import { motion } from "framer-motion";
 const Header = () => {
 
     return (
-        <header className='flex items-center font-extralight justify-between px-8'>
+        <header className='flex items-center font-extralight px-8'>
 
             <motion.div
-                className='w-full flex justify-between'
+                className='w-full flex justify-between items-center'
                 initial={{ opacity: 0, scale: 1 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 1, duration: 0.3 }}
@@ -23,7 +23,7 @@ const Header = () => {
                 </a>
                 
 
-                <div className='hidden md:block lg:block bg-zinc-200 dark:bg-[rgba(0,0,0,0.9)] dark:border border-stone-950 rounded-full'>
+                <div className='hidden lg:block bg-zinc-200 dark:bg-[rgba(0,0,0,0.9)] dark:border border-stone-950 rounded-full'>
                     <Menu />
                 </div>
 
