@@ -23,7 +23,7 @@ export const Aboult = () => {
 
 
     return (
-        <section id='About' className="min-h-[calc(100vh-44px)] md:min-h-screen lg:min-h-screen w-screen flex justify-center items-center">
+        <section id='About' className="scroll-mt-28 md:scroll-mt-20 min-h-[calc(100vh-44px)] md:min-h-screen w-screen flex justify-center items-center">
 
 
             <div className="flex flex-col gap-8 justify-center items-center w-full max-w-[350px] sm:max-w-6xl p-4 md:p-8 mx-4">
