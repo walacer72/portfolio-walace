@@ -82,13 +82,16 @@ const Contact = () => {
 
                 <div className="w-full md:mt-12 gap-4 md:gap-8 flex flex-col md:flex-row justify-between md:p-4 items-center">
 
-                    <div className="flex-1 flex flex-col justify-between md:items-start md:p-8 lg:h-80 items-center">
+                    <div className="flex-1 flex flex-col sm:gap-28 lg:gap-32 md:items-start md:p-8 lg:h-80 items-center">
 
                         <h3 className='text-sm md:text-md text-primary-foreground text-center md:text-start md:leading-relaxed mb-8 md:mb-0'>
                             Acredito que bons resultados vêm da combinação entre esforço, responsabilidade e trabalho em equipe. Estou pronto para contribuir em projetos desafiadores e crescer junto com profissionais que também buscam excelência.
                         </h3>
 
-                        <Icons />
+                        <div className="mt-auto">
+                            <Icons />
+                        </div>
+
 
 
                     </div>

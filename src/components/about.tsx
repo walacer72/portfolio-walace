@@ -23,7 +23,7 @@ export const Aboult = () => {
 
 
     return (
-        <div id='About' className="min-h-[calc(100vh-44px)] md:min-h-screen lg:min-h-screen w-screen flex justify-center items-center">
+        <section id='About' className="min-h-[calc(100vh-44px)] md:min-h-screen lg:min-h-screen w-screen flex justify-center items-center">
 
 
             <div className="flex flex-col gap-8 justify-center items-center w-full max-w-[350px] sm:max-w-6xl p-4 md:p-8 mx-4">
@@ -42,12 +42,7 @@ export const Aboult = () => {
                 <div className="flex flex-col gap-2 p-4 md:p-8 bg-[rgba(0,0,0,0.1)] dark:bg-black rounded-3xl border md:border-transparent">
                     <p className="text-sm text-primary md:leading-relaxed">Desenvolvedor em transição de carreira com foco em desenvolvimento web, atualmente cursando Análise e Desenvolvimento de Sistemas. Possuo experiência em frontend, desenvolvendo interfaces responsivas com abordagem mobile first utilizando React, TypeScript, JavaScript, HTML e CSS, além de integração com APIs REST.</p>
 
-                    <p className="text-sm text-primary md:leading-relaxed">Também tenho conhecimentos em backend com Node.js, Express, Prisma e bancos de dados como MySQL e MongoDB, incluindo manipulação de arquivos e processamento de imagens com Multer e Sharp...
-                        <span
-                            onClick={() => setShow(!show)}
-                            className="md:hidden hover:underline cursor-pointer opacity-70">
-                              Ver mais
-                        </span>
+                    <p className="text-sm text-primary md:leading-relaxed">Também tenho conhecimentos em backend com Node.js, Express, Prisma e bancos de dados como MySQL e MongoDB, incluindo manipulação de arquivos e processamento de imagens com Multer e Sharp{show ? '':'...'}
                     </p>
 
                     <div className={`${show ? 'max-h-64 opacity-100 mt-2' : 'max-h-0 opacity-0'} overflow-hidden transition-all duration-500 ease-in-out sm:max-h-none sm:opacity-100 flex flex-col gap-4
@@ -58,6 +53,12 @@ export const Aboult = () => {
 
                         <p className={`text-sm text-primary md:leading-relaxedf`}>Busco minha primeira oportunidade na área de tecnologia para atuar em projetos reais, evoluir tecnicamente e contribuir com o time, unindo minha experiência profissional com o desenvolvimento de soluções web.</p>
                     </div>
+
+                    <span
+                        onClick={() => setShow(!show)}
+                        className="sm:hidden hover:underline cursor-pointer opacity-70">
+                        {show ? 'Ver menos': 'Ver mais'}
+                    </span>
 
 
                     <div className="flex justify-between mt-2">
@@ -92,6 +93,6 @@ export const Aboult = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
