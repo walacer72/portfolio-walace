@@ -63,7 +63,7 @@ const Contact = () => {
     return (
         <section
             id='Contact'
-            className='min-h-[calc(100vh-44px)] md:min-h-screen lg:min-h-screen mt-10 w-full flex justify-center items-center'
+            className='scroll-mb-28 md:scroll-mb-20 min-h-[calc(100vh-44px)] md:min-h-screen lg:min-h-screen mt-10 w-full flex justify-center items-center'
         >
             <div className="max-w-[350px] md:max-w-6xl flex flex-col justify-center items-center p-4 mx-4">
 
