@@ -12,9 +12,9 @@ export default () => {
 
     <div className="flex flex-col min-h-screen w-full subpixel-antialiased overflow-x-hidden">
 
-      <nav className='fixed top-4 right-0 left-0 z-50'>
+      <div className='fixed top-4 right-0 left-0 z-50'>
         <Header />
-      </nav>
+      </div>
 
 
       <main className="bg-background">

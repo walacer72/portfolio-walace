@@ -102,37 +102,65 @@ const Contact = () => {
 
                             <div className="w-full flex flex-col md:flex-row gap-4">
 
-                                <label className='w-full flex flex-col gap-2'>
+                                <label htmlFor="name" className='w-full flex flex-col gap-2'>
 
-                                    <p className='text-sm text-primary pl-4'>Nome</p>
+                                    Nome
 
-                                    <input {...register('name')} className='w-full flex rounded-full text-sm h-8 md:h-10 p-2 px-6 outline-none bg-background shadow-sm shadow-slate-700 text-slate-500 border md:border-transparent' />
+                                    <input
+                                        id="name"
+                                        type='text'
+                                        {...register('name')}
+                                        className='w-full flex rounded-full text-sm h-8 md:h-10 p-2 px-6 outline-none bg-background shadow-sm shadow-slate-700 text-slate-500 border md:border-transparent'
+                                        aria-invalid={!!errors.name}
+                                        aria-describedby="name-error"
+                                    />
 
                                     <div className="h-4">
-                                        {errors.name?.message && <p className="text-sky-400 text-sm">{errors.name.message}</p>}
+                                        {errors.name?.message &&
+                                            <p id='name-error' className="text-sky-400 text-sm">{errors.name.message}</p>
+                                        }
                                     </div>
 
                                 </label>
 
-                                <label className='w-full flex flex-col gap-2'>
+                                <label htmlFor="email" className='w-full flex flex-col gap-2'>
 
-                                    <p className="text-sm text-primary pl-4">E-mail</p>
+                                    E-mail
 
-                                    <input {...register('email')} className='w-full flex rounded-full text-sm h-8 md:h-10 p-2 px-6 outline-none bg-background shadow-sm shadow-slate-700 text-slate-500 border md:border-transparent' />
+                                    <input
+                                        id="email"
+                                        type='email'
+                                        {...register('email')}
+                                        className='w-full flex rounded-full text-sm h-8 md:h-10 p-2 px-6 outline-none bg-background shadow-sm shadow-slate-700 text-slate-500 border md:border-transparent'
+                                        aria-invalid={!!errors.email}
+                                        aria-describedby="email-error"
+                                    />
 
                                     <div className="h-4">
-                                        {errors.email?.message && <p className="text-sky-400 text-sm">{errors.email.message}</p>}
+                                        {errors.email?.message &&
+                                            <p id="email-error" className="text-sky-400 text-sm">{errors.email.message}</p>
+                                        }
                                     </div>
 
                                 </label>
                             </div>
 
-                            <label className='flex flex-col gap-2'>
-                                <p className='text-sm text-primary pl-4'>Mensagem</p>
-                                <textarea {...register('textArea')} className='rounded-3xl text-slate-500 p-2 px-6 outline-none bg-background shadow-sm shadow-slate-700 w-full overflow-y-hidden h-8 text-sm md:h-16 md:max-h-32 resize-none border md:border-transparent' />
+                            <label htmlFor="textArea" className='flex flex-col gap-2'>
+
+                                Mensagem
+
+                                <textarea
+                                    id="textArea"
+                                    {...register('textArea')}
+                                    className='rounded-3xl text-slate-500 p-2 px-6 outline-none bg-background shadow-sm shadow-slate-700 w-full overflow-y-hidden h-8 text-sm md:h-16 md:max-h-32 resize-none border md:border-transparent'
+                                    aria-invalid={!!errors.textArea}
+                                    aria-describedby="textArea-error"
+                                />
 
                                 <div className="h-4">
-                                    {errors.textArea?.message && <p className="text-sky-400 text-sm">{errors.textArea.message}</p>}
+                                    {errors.textArea?.message &&
+                                        <p id="textArea-error" className="text-sky-400 text-sm">{errors.textArea.message}</p>
+                                    }
                                 </div>
 
                             </label>

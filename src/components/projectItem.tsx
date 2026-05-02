@@ -36,15 +36,19 @@ const ProjectItem = ({ item, index }: Props) => {
                         <h3 className='font-semibold text-base md:text-lg'>{item.name}</h3>
                         <div className="flex justify-center items-center gap-2 md:gap-4 text-card">
                             {item.tec.map((tech) => (
-                                <div key={tech}>{icons[tech]}</div>
-                            ))};
+                                <div
+                                    aria-label={tech}
+                                    key={tech}>
+                                    {icons[tech]}
+                                </div>
+                            ))}
                         </div>
                     </div>
 
                     {item.pc && (
                         <Image
                             src={item.pc}
-                            alt={item.name}
+                            alt={item.alt}
                             width={400}
                             height={250}
                             className="hidden md:block w-full h-auto rounded-lg object-cover border-4 border-zinc-300 dark:border-none"
@@ -55,7 +59,7 @@ const ProjectItem = ({ item, index }: Props) => {
                     {item.smart ? (
                         <Image
                             src={item.smart}
-                            alt={item.name}
+                            alt={item.alt}
                             width={300}
                             height={300}
                             className="md:hidden w-full h-auto rounded-lg border-4 border-zinc-300 dark:border-none"
@@ -63,7 +67,7 @@ const ProjectItem = ({ item, index }: Props) => {
                     ) : item.pc ? (
                         <Image
                             src={item.pc}
-                            alt={item.name}
+                            alt={item.alt}
                             width={400}
                             height={250}
                             className="md:hidden w-full h-auto rounded-lg object-cover border-4 border-zinc-300 dark:border-none"
@@ -76,28 +80,34 @@ const ProjectItem = ({ item, index }: Props) => {
 
                 <div className="flex gap-5 text-xs mt-2 justify-between text-primary-foreground font-medium">
                     <a
-                        className="transition ease-in duration-200 py-2 px-4 inline-block cursor-pointer border border-transparent hover:opacity-80 [transform:translateZ(0)]"
+                        className="transition ease-in duration-200 py-2 px-4 inline-block cursor-pointer border border-transparent hover:opacity-80 [transform:translateZ(0)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-sky-400 focus-visible:outline-offset-2"
                         href={item.demo}
                         target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir demo do projeto (abre em nova aba)"
                     >
                         Demo
                     </a>
 
                     <a
-                        className="transition ease-in duration-200 py-2 px-4 inline-block cursor-pointer border border-transparent hover:opacity-80 [transform:translateZ(0)]"
+                        className="transition ease-in duration-200 py-2 px-4 inline-block cursor-pointer border border-transparent hover:opacity-80 [transform:translateZ(0)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-sky-400 focus-visible:outline-offset-2"
                         href={item.github}
                         target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir repositorio github (abre em nova aba)"
                     >
                         GitHub
                     </a>
 
-                    <a
+                    <button
                         onMouseEnter={() => setDescriptShow(true)}
                         onMouseLeave={() => setDescriptShow(false)}
+                        onFocus={() => setDescriptShow(true)}
+                        onBlur={() => setDescriptShow(false)}
                         className="transition ease-in duration-200 py-2 px-4 inline-block cursor-pointer border border-transparent text-sky-800 hover:opacity-80 [transform:translateZ(0)]"
                     >
                         Explorar
-                    </a>
+                    </button>
                 </div>
 
 

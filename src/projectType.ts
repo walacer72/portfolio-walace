@@ -11,6 +11,7 @@ export type Project = {
   smart?: string | StaticImageData | null; 
   name: string;
   description: string;
+  alt: string;
   tecnologias: string;
   tec: Tec[];
 };
