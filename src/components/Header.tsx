@@ -45,7 +45,7 @@ const Header = () => {
                         Entre em contato
                     </a>
 
-                    <ThemeToggle />
+                    <ThemeToggle/>
                 </div>
             </motion.div>
 

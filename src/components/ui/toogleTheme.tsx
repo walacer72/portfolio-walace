@@ -22,6 +22,7 @@ export function ThemeToggle() {
     <Button
       variant="outline"
       size="icon"
+      aria-label="Alternar tema claro e escuro"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       className="border-none rounded-full"
     >

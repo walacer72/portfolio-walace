@@ -11,13 +11,15 @@ export const Menu = () => {
     const lista = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
     const [key, setKey] = useState(0);
 
+    
+
     const handleButtonShow = (index: number) => {
         setKey(index);
 
     }
 
     useEffect(() => {
-        
+
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
@@ -49,7 +51,13 @@ export const Menu = () => {
                     <li key={index} className='flex items-center cursor-pointer font-light transition-all duration-200 group text-sm md:text-base xl:text-base'>
 
                         <a
-
+                            aria-label={
+                                item === 'Home' ? 'Ir para início' :
+                                item === 'About' ? 'Ir para sobre mim' :
+                                item === 'Skills' ? 'Ir para habilidades' :
+                                item === 'Projects' ? 'Ir para projetos' :
+                                'Ir para contato'
+                            }
                             onClick={() => handleButtonShow(index)}
                             className={`transition-all ease-in duration-200 hover:-translate-y-1 ${key === index ? 'text-sky-700' : ''}`}
                             href={`#${item}`}
