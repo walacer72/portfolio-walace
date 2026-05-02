@@ -20,7 +20,7 @@ const Header = () => {
 
                 <a
                     href="#Home"
-                    className='text-stone-400 font-semibold text-xl md:text-2xl lg:text-3xl hover:text-stone-700 transition-all duration-200 ease-in cursor-pointer md:w-56'
+                    className='text-stone-700 dark:text-stone-400 font-semibold text-xl md:text-2xl lg:text-3xl hover:opacity-70 transition-all duration-200 ease-in cursor-pointer md:w-56'
                     aria-label="Volte home"
                 >
                     Walace.

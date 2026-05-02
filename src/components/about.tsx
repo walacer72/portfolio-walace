@@ -70,7 +70,7 @@ export const Aboult = () => {
                                     </div>
                                     <span className="text-sky-500 text-xl md:text-2xl mb-1">+</span>
                                 </div>
-                                <p className="text-sm text-primary-foreground opacity-50">Projetos pessoais</p>
+                                <p className="text-sm text-primary-foreground opacity-90">Projetos pessoais</p>
                             </div>
                             <div className="flex flex-col">
                                 <div className="flex items-center">
@@ -79,7 +79,7 @@ export const Aboult = () => {
                                     </div>
                                     <span className="text-sky-500 text-xl md:text-2xl mb-1">+</span>
                                 </div>
-                                <p className="text-sm text-primary-foreground opacity-50">Projetos acadêmicos</p>
+                                <p className="text-sm text-primary-foreground opacity-90">Projetos acadêmicos</p>
                             </div>
                         </div>
                         <button className="bg-sky-700 rounded-full flex items-center gap-2 transition-all ease-in px-4 hover:-translate-y-2">
