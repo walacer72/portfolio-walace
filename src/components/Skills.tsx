@@ -2,7 +2,7 @@
 
 import { Habilidades, Tecnologias, Stacks } from "../data/dataSkills";
 import { useScroll, useTransform, motion } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { icons } from "./icons";
 import {
   Tooltip,
@@ -25,6 +25,8 @@ const Skills = () => {
   const y = useTransform(scrollYProgress, [0, 1], [30, 0]);
   const opacity = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
 
   return (
     <section id='Skills' className='flex flex-col md:flex items-center justify-center min-h-[calc(100vh-44px)] md:min-h-screen lg:min-h-screen mt-0 px-4 md:p-6 lg:p-10'>
@@ -46,36 +48,53 @@ const Skills = () => {
 
           <h3 className='hidden lg:flex text-sm text-primary-foreground text-center'>Possuo conhecimentos em desenvolvimento front-end, com experiência no uso de HTML, CSS, JavaScript e frameworks modernos como React e Tailwind CSS, aplicando boas práticas de codificação, performance e usabilidade.</h3>
 
-          <TooltipProvider delayDuration={200}>
-            <ul className="w-full grid place-items-center lg:hidden grid-cols-4 gap-3 md:gap-4 md:mt-4">
-              {Stacks.map((item, index) => (
-                <Tooltip key={item.tec}>
-                  <TooltipTrigger asChild>
-                    <motion.li
-                      className="flex items-center justify-center text-primary p-2 transition-all duration-300 ease-in font-medium shadow-sm shadow-sky-800 rounded-full overflow-hidden border border-transparent hover:shadow-2xl hover:shadow-sky-800 hover:scale-110 w-14 h-14"
+          
 
-                      initial={{ opacity: 0, y: 50 }}
-                      whileInView={{ opacity: 1, y: 0 }}
+          <ul className="w-full grid place-items-center lg:hidden grid-cols-4 gap-3 md:gap-4 md:mt-4">
+            {Stacks.map((item, index) => {
+              const isActive = activeIndex === index;
 
-                      transition={{ delay: index * 0.2 }}
+              return (
+                <motion.li
+                  key={item.tec}
+                  onClick={() =>
+                    setActiveIndex(isActive ? null : index)
+                  }
+                  className="flex flex-col items-center justify-center text-primary p-2 font-medium rounded-full w-16 h-16 relative cursor-pointer hover:shadow-2xl hover:shadow-sky-700 transition-all duration-300 ease-in-out"
 
-                      viewport={{ once: true }}
-                    >
-                      <div className="flex items-center justify-center">
-                        <div className="w-10 h-10 flex justify-center items-center text-2xl text-sky-800">
-                          {icons[item.tec]}
-                        </div>
-                      </div>
-                    </motion.li>
-                  </TooltipTrigger>
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.2 }}
+                  viewport={{ once: true }}
+                >
+                  {/* Ícone */}
+                  <motion.div
+                    animate={{
+                      scale: isActive ? 1.2 : 1,
+                    }}
+                    className="flex items-center justify-center w-12 h-12 rounded-full shadow-sm shadow-sky-800"
+                  >
+                    <div className="text-2xl text-sky-800">
+                      {icons[item.tec]}
+                    </div>
+                  </motion.div>
 
-                  <TooltipContent side="right" className="text-xs bg-background shadow-sm shadow-sky-800 rounded-full">
+                  {/* Label animado */}
+                  <motion.span
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{
+                      opacity: isActive ? 1 : 0,
+                      y: isActive ? 0 : 10,
+                    }}
+                    transition={{ duration: 0.2 }}
+                    className="absolute -bottom-5 text-[10px] bg-background px-2 py-1 rounded-full shadow shadow-sky-800 whitespace-nowrap"
+                  >
                     {item.tec}
-                  </TooltipContent>
-                </Tooltip>
-              ))}
-            </ul>
-          </TooltipProvider>
+                  </motion.span>
+                </motion.li>
+              );
+            })}
+          </ul>
 
           <ul className="hidden w-full lg:grid lg:grid-cols-4 gap-4 md:mt-4">
 

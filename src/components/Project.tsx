@@ -68,7 +68,7 @@ const Project = () => {
               Conheça alguns dos meus projetos pessoais desenvolvidos fora do ambiente acadêmico, aplicando tecnologias como React, Next.js, Tailwind CSS, HTML, CSS, JavaScript, shadcn-ui e consumo de APIs.
             </p>
 
-            <ul className='w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 mb-4 px-8 md:px-4 '>
+            <ul className='w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 mb-4 px-4'>
               {personalProjects.map((item, index) => (
                 <ProjectItem item={item} key={index} index={index} />
               ))}
@@ -85,7 +85,7 @@ const Project = () => {
               Confira alguns dos projetos que desenvolvi ao longo da minha jornada como estudante de desenvolvimento web — cada um foi passo importante na construção do meu conhecimento!
             </p>
 
-            <ul className='w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 mb-4 px-8 md:px-4'>
+            <ul className='w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 mb-4 px-4'>
               {academicProjects.map((item, index) => (
                 <ProjectItem item={item} key={index} index={index} />
               ))}
