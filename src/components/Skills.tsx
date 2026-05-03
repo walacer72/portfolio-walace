@@ -4,12 +4,6 @@ import { Habilidades, Tecnologias, Stacks } from "../data/dataSkills";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef, useState } from "react";
 import { icons } from "./icons";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip"
 
 
 const Skills = () => {
