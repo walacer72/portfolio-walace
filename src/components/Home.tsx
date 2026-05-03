@@ -3,7 +3,6 @@
 import { Menu } from './menu';
 import { Icons } from './icons';
 import { motion } from "framer-motion";
-import LiquidBackground from './ui/liquidBackground';
 
 
 const Home = () => {
